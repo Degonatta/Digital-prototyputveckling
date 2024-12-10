@@ -1,0 +1,87 @@
+body {
+    background-color: rgb(0, 0, 0);
+    
+}
+
+header {
+    background-color: #fff;
+    text-align: center;
+
+}
+header img {
+    display: inline-block; /* Behåller bildens form */
+}
+
+main.start {
+    background-image: url(storystart.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center; /* Centrerar horisontellt */
+    min-height: 750px;
+
+}
+
+main.cabin {
+    background-image: url(cabin.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center; /* Centrerar horisontellt */
+    min-height: 750px;
+
+}
+.game {
+    display: flex;                /* Aktiverar flexbox */
+    flex-direction: column;
+    align-items: center; 
+    background-image: url(Paper.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-left: 700px;
+    margin-top: 50px;
+    height: 600px;
+    width: 600px;
+}
+
+.game-cabin {
+    display: flex;                /* Aktiverar flexbox */
+    flex-direction: column;
+    align-items: center; 
+    background-image: url(Paper.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-right: 700px;
+    margin-top: 20px;
+    height: 600px;
+    width: 600px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.text-container {
+    padding-top: 150px; /* Flyttar bara texten inom .text-container nedåt */
+}
+
+button {
+    background-color: #ffffff; /* Grön bakgrund */
+    color: rgb(0, 0, 0);             /* Vit text */
+    border: none;             /* Ingen kant */
+    padding: 5px 40px;       /* Inre marginal */
+    text-align: center;       /* Centrera text */
+    text-decoration: none;    /* Ingen understrykning */
+    display: inline-block;    /* Gör knappen inline-block */
+    font-size: 14px;          /* Storlek på text */
+    cursor: pointer;          /* Ändra muspekaren vid hovring */
+    border-radius: 50px;       /* Rundade hörn */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Skugga */
+
+}
