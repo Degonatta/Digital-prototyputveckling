@@ -33,6 +33,16 @@ main.cabin {
     min-height: 750px;
 
 }
+
+main.level {
+    background-image: url(backgroundmap.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center; /* Centrerar horisontellt */
+    min-height: 750px;
+}
 .game {
     display: flex;                /* Aktiverar flexbox */
     flex-direction: column;
@@ -61,6 +71,66 @@ main.cabin {
     margin-top: 20px;
     height: 600px;
     width: 600px;
+}
+
+.game-level {
+    display: flex;                /* Aktiverar flexbox */
+    flex-direction: column;
+    align-items: center; 
+    background-image: url(Paper.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-top: 20px;
+    height: 600px;
+    width: 600px;
+
+}
+
+.easy-button{
+    position: absolute;
+    width: 69px;
+    height: 27px;
+    left: 599px;
+    top: 359px;
+    background: #C0FFB7;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 19px;
+    display: flex; /* Gör knappen till en flexbox */
+    justify-content: center; /* Centrera texten horisontellt */
+    align-items: center; /* Centrera texten vertikalt */
+
+}
+
+.medium-button {
+    position: absolute;
+    width: 69px;
+    height: 27px;
+    left: 686px;
+    top: 359px;
+    background: #FFF67E;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 19px;
+    display: flex; /* Gör knappen till en flexbox */
+    justify-content: center; /* Centrera texten horisontellt */
+    align-items: center; /* Centrera texten vertikalt */
+
+}
+
+.hard-button {
+    position: absolute;
+    width: 69px;
+    height: 27px;
+    left: 773px;
+    top: 359px;
+    background: #FFA8A8;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 19px;
+    display: flex; /* Gör knappen till en flexbox */
+    justify-content: center; /* Centrera texten horisontellt */
+    align-items: center; /* Centrera texten vertikalt */
+
 }
 
 h2 {
