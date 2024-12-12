@@ -54,6 +54,16 @@ main.clue {
     min-height: 750px;
 
 }
+
+main.codeone {
+    background-image: url(clueonebackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center; /* Centrerar horisontellt */
+    min-height: 750px; 
+}
 .game {
     display: flex;                /* Aktiverar flexbox */
     flex-direction: column;
