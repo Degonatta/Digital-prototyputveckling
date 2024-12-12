@@ -3,13 +3,17 @@ body {
     
 }
 
+.codeone-page {
+    background-image: url(clueonebackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 header {
-    background-color: #fff;
+    background-color: transparent;
     text-align: center;
 
-}
-header img {
-    display: inline-block; /* Behåller bildens form */
 }
 
 main.start {
@@ -66,13 +70,50 @@ main.cluemap {
 }
 
 main.codeone {
-    background-image: url(clueonebackground.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center; /* Centrerar horisontellt */
     min-height: 750px; 
+}
+
+.alphabet-buttons {
+    display: flex;
+    gap: 5px; /* Mellanrum mellan knapparna */
+    justify-content: center;
+}
+
+.alphabet-buttons button {
+    width: 40px; /* Justera bredd */
+    height: 40px; /* Justera höjd */
+    background: #FBFBFB;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px; /* Justera fontstorleken för bokstäver */
+    cursor: pointer;
+    position: relative; /* För positionering av siffran */
+    display: flex; /* Flex för att positionera innehållet */
+    flex-direction: row; /* Sätt bokstaven över siffran */
+    gap: 2px;
+    align-items: center; /* Centrera horisontellt */
+    justify-content: center; /* Centrera vertikalt */
+}
+
+.alphabet-buttons button:hover {
+    background: #c4dcf5;
+}
+
+.alphabet-buttons .letter {
+    font-size: 20px; /* Gör bokstaven större */
+    
+}
+
+.alphabet-buttons .number {
+    font-size: 12px; /* Gör siffran mindre */
+    color: #666; /* Grå färg för siffran */
+    margin-top: -5px; /* Justera avstånd mellan bokstav och siffra */
 }
 .game {
     display: flex;                /* Aktiverar flexbox */
@@ -172,7 +213,7 @@ h2 {
     padding-top: 150px; /* Flyttar bara texten inom .text-container nedåt */
 }
 
-button {
+button:not(.alphabet-buttons button) {
     background-color: #ffffff; /* Grön bakgrund */
     color: rgb(0, 0, 0);             /* Vit text */
     border: none;             /* Ingen kant */
