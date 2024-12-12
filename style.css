@@ -43,6 +43,17 @@ main.level {
     justify-content: center; /* Centrerar horisontellt */
     min-height: 750px;
 }
+
+main.clue {
+    background-image: url(backgroundmap.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center; /* Centrerar horisontellt */
+    min-height: 750px;
+
+}
 .game {
     display: flex;                /* Aktiverar flexbox */
     flex-direction: column;
