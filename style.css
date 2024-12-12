@@ -44,8 +44,18 @@ main.level {
     min-height: 750px;
 }
 
-main.clue {
+main.easylevel {
     background-image: url(backgroundmap.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center; /* Centrerar horisontellt */
+    min-height: 750px;
+}
+
+main.cluemap {
+    background-image: url(clueonebackground.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
