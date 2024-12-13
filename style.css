@@ -59,7 +59,7 @@ header {
 }
 
 main.start {
-    background-image: url(/Picture/Start.png);
+    background-image: url(Picture/Start.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -70,7 +70,7 @@ main.start {
 }
 
 main.cabin {
-    background-image: url(/Picture/cabin.png);
+    background-image: url(Picture/cabin.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -101,7 +101,7 @@ main.easylevel {
 }
 
 main.cluemap {
-    background-image: url(/Picture/backgroundmap.png);
+    background-image: url(Picture/backgroundmap.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -188,6 +188,21 @@ main.codeone {
 }
 
 .game-level {
+    display: flex;                /* Aktiverar flexbox */
+    flex-direction: column;
+    align-items: center; 
+    background-image: url(Picture/Paper.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-top: 20px;
+    height: 600px;
+    width: 600px;
+
+}
+
+.map-one {
     display: flex;                /* Aktiverar flexbox */
     flex-direction: column;
     align-items: center; 
