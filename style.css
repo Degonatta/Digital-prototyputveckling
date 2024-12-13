@@ -4,7 +4,7 @@ body {
 }
 
 .codeone-page {
-    background-image: url(clueonebackground.png);
+    background-image: url(/Picture/BackgroundClue1.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -17,7 +17,7 @@ header {
 }
 
 main.start {
-    background-image: url(storystart.png);
+    background-image: url(/Picture/Start.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -28,7 +28,7 @@ main.start {
 }
 
 main.cabin {
-    background-image: url(cabin.png);
+    background-image: url(/Picture/cabin.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -39,7 +39,7 @@ main.cabin {
 }
 
 main.level {
-    background-image: url(backgroundmap.png);
+    background-image: url(Picture/backgroundmap.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -49,7 +49,7 @@ main.level {
 }
 
 main.easylevel {
-    background-image: url(backgroundmap.png);
+    background-image: url(Picture/backgroundmap.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -59,7 +59,7 @@ main.easylevel {
 }
 
 main.cluemap {
-    background-image: url(clueonebackground.png);
+    background-image: url(/Picture/backgroundmap.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -119,7 +119,7 @@ main.codeone {
     display: flex;                /* Aktiverar flexbox */
     flex-direction: column;
     align-items: center; 
-    background-image: url(Paper.png);
+    background-image: url(Picture/Paper.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -134,7 +134,7 @@ main.codeone {
     display: flex;                /* Aktiverar flexbox */
     flex-direction: column;
     align-items: center; 
-    background-image: url(Paper.png);
+    background-image: url(Picture/Paper.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -149,7 +149,7 @@ main.codeone {
     display: flex;                /* Aktiverar flexbox */
     flex-direction: column;
     align-items: center; 
-    background-image: url(Paper.png);
+    background-image: url(Picture/Paper.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
