@@ -10,6 +10,20 @@ body {
     background-position: center;
 }
 
+.start-page {
+    background-image: url(storystart.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.level-page {
+    background-image: url(backgroundmap.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 header {
     background-color: transparent;
     text-align: center;
@@ -17,7 +31,6 @@ header {
 }
 
 main.start {
-    background-image: url(storystart.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -39,7 +52,6 @@ main.cabin {
 }
 
 main.level {
-    background-image: url(backgroundmap.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -167,11 +179,12 @@ main.codeone {
     left: 599px;
     top: 359px;
     background: #C0FFB7;
-    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Skugga */
     border-radius: 19px;
     display: flex; /* Gör knappen till en flexbox */
     justify-content: center; /* Centrera texten horisontellt */
     align-items: center; /* Centrera texten vertikalt */
+    border: none;
 
 }
 
@@ -182,11 +195,12 @@ main.codeone {
     left: 686px;
     top: 359px;
     background: #FFF67E;
-    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Skugga */
     border-radius: 19px;
     display: flex; /* Gör knappen till en flexbox */
     justify-content: center; /* Centrera texten horisontellt */
     align-items: center; /* Centrera texten vertikalt */
+    border: none;
 
 }
 
@@ -197,11 +211,12 @@ main.codeone {
     left: 773px;
     top: 359px;
     background: #FFA8A8;
-    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Skugga */
     border-radius: 19px;
     display: flex; /* Gör knappen till en flexbox */
     justify-content: center; /* Centrera texten horisontellt */
     align-items: center; /* Centrera texten vertikalt */
+    border: none;
 
 }
 
@@ -213,7 +228,7 @@ h2 {
     padding-top: 150px; /* Flyttar bara texten inom .text-container nedåt */
 }
 
-button:not(.alphabet-buttons button) {
+.next-button {
     background-color: #ffffff; /* Grön bakgrund */
     color: rgb(0, 0, 0);             /* Vit text */
     border: none;             /* Ingen kant */
