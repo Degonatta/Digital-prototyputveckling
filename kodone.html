@@ -8,52 +8,50 @@
 </head>
 <body class="codeone-page">
     <header>
-       <div class="alphabet-buttons">
-        <button><span class="letter">A</span><span class="number">1</span></button>
-        <button><span class="letter">B</span><span class="number">2</span></button>
-        <button><span class="letter">C</span><span class="number">3</span></button>
-        <button><span class="letter">D</span><span class="number">4</span></button>
-        <button><span class="letter">E</span><span class="number">5</span></button>
-        <button><span class="letter">F</span><span class="number">6</span></button>
-        <button><span class="letter">G</span><span class="number">7</span></button>
-        <button><span class="letter">H</span><span class="number">8</span></button>
-        <button><span class="letter">I</span><span class="number">9</span></button>
-        <button><span class="letter">J</span><span class="number">10</span></button>
-        <button><span class="letter">K</span><span class="number">11</span></button>
-        <button><span class="letter">L</span><span class="number">12</span></button>
-        <button><span class="letter">M</span><span class="number">13</span></button>
-        <button><span class="letter">N</span><span class="number">14</span></button>
-        <button><span class="letter">O</span><span class="number">15</span></button>
-        <button><span class="letter">P</span><span class="number">16</span></button>
-        <button><span class="letter">Q</span><span class="number">17</span></button>
-        <button><span class="letter">R</span><span class="number">18</span></button>
-        <button><span class="letter">S</span><span class="number">19</span></button>
-        <button><span class="letter">T</span><span class="number">20</span></button>
-        <button><span class="letter">U</span><span class="number">21</span></button>
-        <button><span class="letter">V</span><span class="number">22</span></button>
-        <button><span class="letter">W</span><span class="number">23</span></button>
-        <button><span class="letter">X</span><span class="number">24</span></button>
-        <button><span class="letter">Y</span><span class="number">25</span></button>
-        <button><span class="letter">Z</span><span class="number">26</span></button>
-        <button><span class="letter">Å</span><span class="number">27</span></button>
-        <button><span class="letter">Ä</span><span class="number">28</span></button>
-        <button><span class="letter">Ö</span><span class="number">29</span></button>
+        <div class="alphabet-buttons">
+            <button data-letter="A"><span class="letter">A</span><span class="number">1</span></button>
+            <button data-letter="B"><span class="letter">B</span><span class="number">2</span></button>
+            <button data-letter="C"><span class="letter">C</span><span class="number">3</span></button>
+            <button data-letter="D"><span class="letter">D</span><span class="number">4</span></button>
+            <button data-letter="E"><span class="letter">E</span><span class="number">5</span></button>
+            <button data-letter="F"><span class="letter">F</span><span class="number">6</span></button>
+            <button data-letter="G"><span class="letter">G</span><span class="number">7</span></button>
+            <button data-letter="H"><span class="letter">H</span><span class="number">8</span></button>
+            <button data-letter="I"><span class="letter">I</span><span class="number">9</span></button>
+            <button data-letter="J"><span class="letter">J</span><span class="number">10</span></button>
+            <button data-letter="K"><span class="letter">K</span><span class="number">11</span></button>
+            <button data-letter="L"><span class="letter">L</span><span class="number">12</span></button>
+            <button data-letter="M"><span class="letter">M</span><span class="number">13</span></button>
+            <button data-letter="N"><span class="letter">N</span><span class="number">14</span></button>
+            <button data-letter="O"><span class="letter">O</span><span class="number">15</span></button>
+            <button data-letter="P"><span class="letter">P</span><span class="number">16</span></button>
+            <button data-letter="Q"><span class="letter">Q</span><span class="number">17</span></button>
+            <button data-letter="R"><span class="letter">R</span><span class="number">18</span></button>
+            <button data-letter="S"><span class="letter">S</span><span class="number">19</span></button>
+            <button data-letter="T"><span class="letter">T</span><span class="number">20</span></button>
+            <button data-letter="U"><span class="letter">U</span><span class="number">21</span></button>
+            <button data-letter="V"><span class="letter">V</span><span class="number">22</span></button>
+            <button data-letter="W"><span class="letter">W</span><span class="number">23</span></button>
+            <button data-letter="X"><span class="letter">X</span><span class="number">24</span></button>
+            <button data-letter="Y"><span class="letter">Y</span><span class="number">25</span></button>
+            <button data-letter="Z"><span class="letter">Z</span><span class="number">26</span></button>
+            <button data-letter="Å"><span class="letter">Å</span><span class="number">27</span></button>
+            <button data-letter="Ä"><span class="letter">Ä</span><span class="number">28</span></button>
+            <button data-letter="Ö"><span class="letter">Ö</span><span class="number">29</span></button>
         </div>
-
     </header>
-     <main class="codeone">
-           <div class="game-level">
-              <div class="text-container">
-                <h2>kod ett</h2>
-            
-              </div>
-              <br><br>
-              <button onclick="location.href='cabin.html'">Next ></button>
-           </div>
-     </main>
-    
 
+    <main>
+        <div class="game-level">
+            <div class="text-container">
+                <h2>Kod ett ord</h2>
+                <!-- Visar de slumpade siffrorna som ord -->
+                <div id="number-display"></div>
+            </div>
+            <button onclick="location.href='cabin.html'">Next ></button>
+        </div>
+    </main>
 
- <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
