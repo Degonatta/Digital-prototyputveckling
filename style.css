@@ -245,3 +245,16 @@ h2 {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Skugga */
     margin-top: 465px;
 }
+
+.roll {
+    position: absolute; /* Säkerställ att den kan placeras exakt */
+    bottom: 10%;        /* Placera den 10% från botten av fönstret */
+    left: 58%;          /* Placera den i mitten av fönstret horisontellt */
+    transform: translateX(-50%); /* Justera så att mitten av bilden är i mitten av fönstret */
+    width: 300px;       /* Ange den exakta bredden */
+}
+.roll img {
+    width: 60%;         /* Justera storleken relativt till förälderns bredd */
+    max-width: 60px;   /* Begränsa maximal bredd */
+    height: auto;       /* Bevara bildens proportioner */
+}
