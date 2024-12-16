@@ -1,5 +1,9 @@
-body {
-    background-color: rgb(0, 0, 0);   
+body, html {
+    margin: 0;             /* Ta bort marginaler */
+    padding: 0;            /* Ta bort padding */
+    height: 100%;          /* Gör body och html lika höga som fönstret */
+    overflow: hidden;      /* Förhindrar skrollning */
+    background-color: rgb(0, 0, 0); /* Bevara din svarta bakgrund */
 }
 
 .codeone-page {
@@ -109,6 +113,7 @@ main {
     margin-top: 50px;
     height: 600px;
     width: 600px;
+    z-index: 1;
 }
 
 .game-cabin {
@@ -210,6 +215,22 @@ h2 {
 .text-container {
     padding-top: 150px; /* Flyttar bara texten inom .text-container nedåt */
 }
+
+.start-willow {
+    position: absolute; /* Säkerställ att den kan placeras exakt */
+    bottom: 0.5%;        /* Placera den 10% från botten av fönstret */
+    left: 50%;          /* Placera den i mitten av fönstret horisontellt */
+    transform: translateX(-50%); /* Justera så att mitten av bilden är i mitten av fönstret */
+    width: 300px;       /* Ange den exakta bredden */
+    z-index: 2;         /* Se till att den syns över andra element */
+}
+
+.start-willow img {
+    width: 30%;         /* Justera storleken relativt till förälderns bredd */
+    max-width: 200px;   /* Begränsa maximal bredd */
+    height: auto;       /* Bevara bildens proportioner */
+}
+
 
 .next-button {
     background-color: #ffffff; /* Grön bakgrund */
