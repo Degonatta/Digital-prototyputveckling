@@ -109,8 +109,6 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
-    margin-left: 700px;
-    margin-top: 50px;
     height: 600px;
     width: 600px;
     z-index: 1;
@@ -125,8 +123,6 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
-    margin-right: 700px;
-    margin-top: 20px;
     height: 600px;
     width: 600px;
 }
@@ -161,15 +157,11 @@ main {
 }
 
 .easy-button{
-    position: absolute;
     width: 69px;
     height: 27px;
-    left: 599px;
-    top: 359px;
     background: #C0FFB7;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Skugga */
     border-radius: 19px;
-    display: flex; /* Gör knappen till en flexbox */
     justify-content: center; /* Centrera texten horisontellt */
     align-items: center; /* Centrera texten vertikalt */
     border: none;
@@ -177,15 +169,11 @@ main {
 }
 
 .medium-button {
-    position: absolute;
     width: 69px;
     height: 27px;
-    left: 686px;
-    top: 359px;
     background: #FFF67E;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Skugga */
     border-radius: 19px;
-    display: flex; /* Gör knappen till en flexbox */
     justify-content: center; /* Centrera texten horisontellt */
     align-items: center; /* Centrera texten vertikalt */
     border: none;
@@ -193,15 +181,11 @@ main {
 }
 
 .hard-button {
-    position: absolute;
     width: 69px;
     height: 27px;
-    left: 773px;
-    top: 359px;
     background: #FFA8A8;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Skugga */
     border-radius: 19px;
-    display: flex; /* Gör knappen till en flexbox */
     justify-content: center; /* Centrera texten horisontellt */
     align-items: center; /* Centrera texten vertikalt */
     border: none;
