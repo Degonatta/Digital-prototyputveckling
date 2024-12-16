@@ -230,3 +230,18 @@ h2 {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Skugga */
 
 }
+
+.helpwillow-button{
+    background-color: #ffffff; /* Grön bakgrund */
+    color: rgb(0, 0, 0);             /* Vit text */
+    border: none;             /* Ingen kant */
+    padding: 5px 40px;       /* Inre marginal */
+    text-align: center;       /* Centrera text */
+    text-decoration: none;    /* Ingen understrykning */
+    display: inline-block;    /* Gör knappen inline-block */
+    font-size: 14px;          /* Storlek på text */
+    cursor: pointer;          /* Ändra muspekaren vid hovring */
+    border-radius: 50px;       /* Rundade hörn */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Skugga */
+    margin-top: 465px;
+}
