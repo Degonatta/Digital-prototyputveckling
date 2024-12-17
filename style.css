@@ -312,14 +312,14 @@ h2 {
 .willow2 {
     position: absolute; /* Säkerställ att den kan placeras exakt */
     bottom: 0.5%;        /* Placera den 10% från botten av fönstret */
-    left: 50%;          /* Placera den i mitten av fönstret horisontellt */
+    left: 52%;          /* Placera den i mitten av fönstret horisontellt */
     transform: translateX(-50%); /* Justera så att mitten av bilden är i mitten av fönstret */
     width: 300px;       /* Ange den exakta bredden */
     z-index: 2;         /* Se till att den syns över andra element */
 }
 
 .willow2 img {
-    width: 80%;         /* Justera storleken relativt till förälderns bredd */
+    width: 70%;         /* Justera storleken relativt till förälderns bredd */
     height: auto;       /* Bevara bildens proportioner */
 }
 
