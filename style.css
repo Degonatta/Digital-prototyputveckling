@@ -42,10 +42,13 @@ body, html {
 }
 
 .clueone-page {
+    position: relative;
     background-image: url(Picture/BackgroundClue1.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;  
+    height: 100vh;
+    width: 100vw;
 }
 
 header {
@@ -248,13 +251,14 @@ h2 {
 
 .roll {
     position: absolute; /* Säkerställ att den kan placeras exakt */
-    bottom: 10%;        /* Placera den 10% från botten av fönstret */
-    left: 58%;          /* Placera den i mitten av fönstret horisontellt */
-    transform: translateX(-50%); /* Justera så att mitten av bilden är i mitten av fönstret */
-    width: 300px;       /* Ange den exakta bredden */
+    bottom: 12%;        /* Placera den 10% från botten av fönstret */
+    left: 48%;          /* Placera den i mitten av fönstret horisontellt */
+    transform: translateX(-50%,); /* Justera så att mitten av bilden är i mitten av fönstret */
+    width: 15vw;       /* Ange den exakta bredden */
+    max-width: 300px;
+    height: auto;
 }
 .roll img {
-    width: 60%;         /* Justera storleken relativt till förälderns bredd */
-    max-width: 60px;   /* Begränsa maximal bredd */
+    width: 30%;         /* Justera storleken relativt till förälderns bredd */
     height: auto;       /* Bevara bildens proportioner */
 }
