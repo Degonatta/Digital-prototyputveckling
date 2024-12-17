@@ -1,6 +1,8 @@
-function hideStone() {
-   const stoneButton = document.querySelector('.stone-button');
-   stoneButton.style.display = 'none'; // Göm stenen
+function hide() {
+   const buttons = document.querySelectorAll('.stone-button, .leaf-button');
+   buttons.forEach(button => {
+       button.style.display = 'none'; // Göm varje matchande element
+   });
 }
 
 
