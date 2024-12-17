@@ -51,6 +51,15 @@ body, html {
     width: 100vw;
 }
 
+.cluetwo-page{
+    position: relative;
+    background-image: url(Picture/BackgroundClue2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+    height: 100vh;
+    width: 100vw;  
+}
 .the-end-page {
     background-image: url(/Picture/TheEnd.png);
     background-repeat: no-repeat;
@@ -356,4 +365,49 @@ h2 {
 }
 .roll img {
     height: auto;       /* Bevara bildens proportioner */
+}
+
+.clue2-container {
+    position: relative; /* Referenspunkt för de absoluta bilderna */
+    position: absolute; /* Säkerställ att den kan placeras exakt */
+    bottom: 30%;        /* Placera den 10% från botten av fönstret */
+    left: 40%;          /* Placera den i mitten av fönstret horisontellt */
+    transform: translateX(-50%,); /* Justera så att mitten av bilden är i mitten av fönstret */
+    width: 15vw;       /* Ange den exakta bredden */
+    max-width: 100px;
+    height: auto;
+}
+
+.stone-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Anpassa till förälderns bredd */
+    height: 100%;
+    background: none; /* Ta bort bakgrund från knappen */
+    border: none; /* Ta bort knappens standardborder */
+    padding: 0; /* Ta bort onödigt mellanrum */
+    cursor: pointer; /* För att indikera att det är klickbart */
+    z-index: 2; /* Se till att stenen ligger överst */
+}
+
+.stone-image {
+    width: 100%; /* Fyll containern */
+    height: auto;
+    display: block; /* Ta bort oönskade mellanrum */
+}
+
+.roll-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Lägre än stenen */
+    margin-top: 55px;
+}
+
+.roll-2 img {
+    width: 100%;
+    height: auto;
 }
