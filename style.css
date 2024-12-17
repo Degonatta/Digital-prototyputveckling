@@ -290,7 +290,7 @@ h2 {
     bottom: 0.5%;        /* Placera den 10% från botten av fönstret */
     left: 50%;          /* Placera den i mitten av fönstret horisontellt */
     transform: translateX(-50%); /* Justera så att mitten av bilden är i mitten av fönstret */
-    width: 300px;       /* Ange den exakta bredden */
+    width: 260px;       /* Ange den exakta bredden */
     z-index: 2;         /* Se till att den syns över andra element */
 }
 
