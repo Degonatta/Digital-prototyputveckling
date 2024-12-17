@@ -440,7 +440,7 @@ h2 {
     
 }
 
-.willow-leaf{
+.willow-leaf-one {
     position: absolute;
     width: 100%; /* Anpassa till förälderns bredd */
     height: 100%;
@@ -448,8 +448,22 @@ h2 {
     left: 56%;
 }
 
-.willow-leaf img{
+.willow-leaf-one img{
     width: 10%;
+    height: auto;
+}
+
+.willow-leaf-two {
+    position: absolute;
+    width: 100%; /* Anpassa till förälderns bredd */
+    height: 100%;
+    top: 50%;        /* Placera den 10% från botten av fönstret */
+    left: 65%;
+    display: none;
+}
+
+.willow-leaf-two img{
+    width: 15%;
     height: auto;
 }
 

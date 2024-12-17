@@ -3,6 +3,14 @@ function hide() {
    buttons.forEach(button => {
        button.style.display = 'none'; // Göm varje matchande element
    });
+
+   const leafOne = document.querySelector('.willow-leaf-one');
+   const leafTwo = document.querySelector('.willow-leaf-two');
+
+   if (leafOne && leafTwo) {
+      leafOne.style.display = 'none'; // Göm willow-leaf-one
+      leafTwo.style.display = 'block'; // Visa willow-leaf-two
+  }
 }
 
 
