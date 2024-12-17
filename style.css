@@ -82,9 +82,14 @@ main {
 }
 
 .alphabet-buttons {
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 1%;
+    padding-bottom: 1%;
     display: flex;
-    gap: 5px; /* Mellanrum mellan knapparna */
-    justify-content: center;
+    gap: 8.5px; /* Mellanrum mellan knapparna */
+    overflow: auto;   
+    overflow-y: hidden; /* Hide horizontal scrollbar */
 }
 
 .alphabet-buttons button {
