@@ -48,6 +48,13 @@ body, html {
     background-position: center;  
 }
 
+.the-end-page {
+    background-image: url(/Picture/TheEnd.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
 header {
     background-color: transparent;
     text-align: center;
@@ -151,8 +158,64 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
-    height: 600px;
-    width: 600px;
+    height: 700px;
+    width: 700px;
+
+}
+
+.map-two {
+    display: flex;                /* Aktiverar flexbox */
+    flex-direction: column;
+    align-items: center; 
+    background-image: url(Picture/Map2.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 700px;
+    width: 700px;
+
+}
+
+.map-three {
+    display: flex;                /* Aktiverar flexbox */
+    flex-direction: column;
+    align-items: center; 
+    background-image: url(Picture/Map3.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 700px;
+    width: 700px;
+
+}
+
+.map-four {
+    display: flex;                /* Aktiverar flexbox */
+    flex-direction: column;
+    align-items: center; 
+    background-image: url(Picture/Map4.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 700px;
+    width: 700px;
+
+}
+
+.map-five {
+    display: flex;                /* Aktiverar flexbox */
+    flex-direction: column;
+    align-items: center; 
+    background-image: url(Picture/Map5.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 700px;
+    width: 700px;
 
 }
 
@@ -165,6 +228,7 @@ main {
     justify-content: center; /* Centrera texten horisontellt */
     align-items: center; /* Centrera texten vertikalt */
     border: none;
+    z-index: 3;         /* Se till att den syns över andra element */
 
 }
 
@@ -177,6 +241,7 @@ main {
     justify-content: center; /* Centrera texten horisontellt */
     align-items: center; /* Centrera texten vertikalt */
     border: none;
+    z-index: 3;         /* Se till att den syns över andra element */
 
 }
 
@@ -189,6 +254,7 @@ main {
     justify-content: center; /* Centrera texten horisontellt */
     align-items: center; /* Centrera texten vertikalt */
     border: none;
+    z-index: 3;         /* Se till att den syns över andra element */
 
 }
 
@@ -197,7 +263,8 @@ h2 {
 }
 
 .text-container {
-    padding-top: 150px; /* Flyttar bara texten inom .text-container nedåt */
+    padding-top: 200px; /* Flyttar bara texten inom .text-container nedåt */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .start-willow {
@@ -215,6 +282,35 @@ h2 {
     height: auto;       /* Bevara bildens proportioner */
 }
 
+.willow2 {
+    position: absolute; /* Säkerställ att den kan placeras exakt */
+    bottom: 0.5%;        /* Placera den 10% från botten av fönstret */
+    left: 50%;          /* Placera den i mitten av fönstret horisontellt */
+    transform: translateX(-50%); /* Justera så att mitten av bilden är i mitten av fönstret */
+    width: 300px;       /* Ange den exakta bredden */
+    z-index: 2;         /* Se till att den syns över andra element */
+}
+
+.willow2 img {
+    width: 80%;         /* Justera storleken relativt till förälderns bredd */
+    height: auto;       /* Bevara bildens proportioner */
+}
+
+.willow2-cabin {
+    position: absolute; /* Säkerställ att den kan placeras exakt */
+    bottom: 0.5%;        /* Placera den 10% från botten av fönstret */
+    left: 50%;          /* Placera den i mitten av fönstret horisontellt */
+    transform: translateX(-50%); /* Justera så att mitten av bilden är i mitten av fönstret */
+    width: 300px;       /* Ange den exakta bredden */
+    z-index: 2;         /* Se till att den syns över andra element */
+    padding-left: 50%;
+}
+
+.willow2-cabin img {
+    width: 110%;         /* Justera storleken relativt till förälderns bredd */
+    height: auto;       /* Bevara bildens proportioner */
+}
+
 
 .next-button {
     background-color: #ffffff; /* Grön bakgrund */
@@ -228,7 +324,7 @@ h2 {
     cursor: pointer;          /* Ändra muspekaren vid hovring */
     border-radius: 50px;       /* Rundade hörn */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Skugga */
-
+    z-index: 3;         /* Se till att den syns över andra element */
 }
 
 .helpwillow-button{
@@ -243,5 +339,5 @@ h2 {
     cursor: pointer;          /* Ändra muspekaren vid hovring */
     border-radius: 50px;       /* Rundade hörn */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Skugga */
-    margin-top: 465px;
+    margin-top: 545px;
 }
