@@ -338,6 +338,35 @@ h2 {
     height: auto;       /* Bevara bildens proportioner */
 }
 
+.willowClueOne {
+    position: absolute; /* Säkerställ att den kan placeras exakt */
+    bottom: 0.5%;        /* Placera den 10% från botten av fönstret */
+    left: 90%;          /* Placera den i mitten av fönstret horisontellt */
+    transform: translateX(-50%); /* Justera så att mitten av bilden är i mitten av fönstret */
+    width: 300px;       /* Ange den exakta bredden */
+    z-index: 2;         /* Se till att den syns över andra element */
+
+}
+
+.willowClueOne img {
+    width: 50%;         /* Justera storleken relativt till förälderns bredd */
+    height: auto;       /* Bevara bildens proportioner */
+}
+
+.willowClueTwo {
+    position: absolute; /* Säkerställ att den kan placeras exakt */
+    bottom: 30%;        /* Placera den 10% från botten av fönstret */
+    left: 60%;          /* Placera den i mitten av fönstret horisontellt */
+    transform: translateX(-50%); /* Justera så att mitten av bilden är i mitten av fönstret */
+    width: 300px;       /* Ange den exakta bredden */
+    z-index: 2;         /* Se till att den syns över andra element */
+
+}
+
+.willowClueTwo img {
+    width: 100%;         /* Justera storleken relativt till förälderns bredd */
+    height: auto;       /* Bevara bildens proportioner */
+}
 
 .next-button {
     background-color: #ffffff; /* Grön bakgrund */
