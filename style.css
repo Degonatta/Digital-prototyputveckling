@@ -364,7 +364,7 @@ h2 {
     height: auto;       /* Bevara bildens proportioner */
 }
 
-.willowClueTwo {
+.willow-stone-one {
     position: absolute; /* Säkerställ att den kan placeras exakt */
     bottom: 30%;        /* Placera den 10% från botten av fönstret */
     left: 60%;          /* Placera den i mitten av fönstret horisontellt */
@@ -374,10 +374,11 @@ h2 {
 
 }
 
-.willowClueTwo img {
+.willow-stone-one img {
     width: 100%;         /* Justera storleken relativt till förälderns bredd */
     height: auto;       /* Bevara bildens proportioner */
 }
+
 
 .willow-stone-two {
     position: absolute; /* Säkerställ att den kan placeras exakt */
