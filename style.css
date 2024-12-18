@@ -364,16 +364,17 @@ h2 {
     height: auto;       /* Bevara bildens proportioner */
 }
 
-.willow-stone-one {
+.willowClueTwo {
     position: absolute; /* Säkerställ att den kan placeras exakt */
     bottom: 30%;        /* Placera den 10% från botten av fönstret */
     left: 60%;          /* Placera den i mitten av fönstret horisontellt */
     transform: translateX(-50%); /* Justera så att mitten av bilden är i mitten av fönstret */
     width: 300px;       /* Ange den exakta bredden */
     z-index: 2;         /* Se till att den syns över andra element */
+
 }
 
-.willow-stone-one img {
+.willowClueTwo img {
     width: 100%;         /* Justera storleken relativt till förälderns bredd */
     height: auto;       /* Bevara bildens proportioner */
 }
@@ -517,27 +518,12 @@ h2 {
     top: 50%;        /* Placera den 10% från botten av fönstret */
     left: 65%;
     display: none;
-    transform: scale(0.8); /* Börja i mindre skala */
-    transition: transform 1s ease, opacity 1s ease; /* För zoom-effekt */
 }
 
 .willow-leaf-two img{
     width: 15%;
     height: auto;
 }
-
-/* Aktivera animationen */
-.zoom-out {
-    transform: scale(1.5); /* Zooma ut */
-    opacity: 0; /* Försvinn */
-}
-
-.zoom-in {
-    display: block;
-    transform: scale(1); /* Zooma in till normalstorlek */
-    opacity: 1; /* Gör synlig */
-}
-
 
 .roll-2 {
     position: absolute;
