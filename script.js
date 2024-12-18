@@ -11,6 +11,15 @@ function hide() {
       leafOne.style.display = 'none'; // Göm willow-leaf-one
       leafTwo.style.display = 'block'; // Visa willow-leaf-two
   }
+
+  const stoneOne = document.querySelector('.willow-stone-one');
+  const stoneTwo = document.querySelector('.willow-stone-two');
+
+  if (stoneOne && stoneTwo) {
+     stoneOne.style.display = 'none'; // Göm willow-leaf-one
+     stoneTwo.style.display = 'block'; // Visa willow-leaf-two
+ }
+
 }
 
 

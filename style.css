@@ -70,6 +70,17 @@ body, html {
     height: 100vh;
     width: 100vw;  
 }
+
+.cluefour-page{
+    position: relative;
+    background-image: url(Picture/BackgroundClue4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+    height: 100vh;
+    width: 100vw;  
+}
+
 .the-end-page {
     background-image: url(/Picture/TheEnd.png);
     background-repeat: no-repeat;
@@ -353,18 +364,33 @@ h2 {
     height: auto;       /* Bevara bildens proportioner */
 }
 
-.willowClueTwo {
+.willow-stone-one {
     position: absolute; /* Säkerställ att den kan placeras exakt */
     bottom: 30%;        /* Placera den 10% från botten av fönstret */
     left: 60%;          /* Placera den i mitten av fönstret horisontellt */
     transform: translateX(-50%); /* Justera så att mitten av bilden är i mitten av fönstret */
     width: 300px;       /* Ange den exakta bredden */
     z-index: 2;         /* Se till att den syns över andra element */
-
 }
 
-.willowClueTwo img {
+.willow-stone-one img {
     width: 100%;         /* Justera storleken relativt till förälderns bredd */
+    height: auto;       /* Bevara bildens proportioner */
+}
+
+.willow-stone-two {
+    position: absolute; /* Säkerställ att den kan placeras exakt */
+    bottom: 15%;        /* Placera den 10% från botten av fönstret */
+    left: 37%;          /* Placera den i mitten av fönstret horisontellt */
+    transform: translateX(-50%); /* Justera så att mitten av bilden är i mitten av fönstret */
+    width: 300px;       /* Ange den exakta bredden */
+    z-index: 1;         /* Se till att den syns över andra element */
+    transform: scaleX(-1); /* Flippat bilden så Willow kollar åt andra hållet */
+    display: none;
+}
+
+.willow-stone-two img {
+    width: 40%;         /* Justera storleken relativt till förälderns bredd */
     height: auto;       /* Bevara bildens proportioner */
 }
 
