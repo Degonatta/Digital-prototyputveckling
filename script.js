@@ -15,6 +15,7 @@ function hide() {
 
 
 
+
 //Array som parar bokstav mot siffra
 
 //API som slumpar fram ett ord för barn i åldrar 3-7. 4-6 bokstäver.API

@@ -475,6 +475,8 @@ h2 {
     height: 100%;
     top: 38%;        /* Placera den 10% från botten av fönstret */
     left: 56%;
+    transition: transform 1s ease, opacity 1s ease; /* För smidig övergång */
+
 }
 
 .willow-leaf-one img{
@@ -489,11 +491,25 @@ h2 {
     top: 50%;        /* Placera den 10% från botten av fönstret */
     left: 65%;
     display: none;
+    transform: scale(0.8); /* Börja i mindre skala */
+    transition: transform 1s ease, opacity 1s ease; /* För zoom-effekt */
 }
 
 .willow-leaf-two img{
     width: 15%;
     height: auto;
+}
+
+/* Aktivera animationen */
+.zoom-out {
+    transform: scale(1.5); /* Zooma ut */
+    opacity: 0; /* Försvinn */
+}
+
+.zoom-in {
+    display: block;
+    transform: scale(1); /* Zooma in till normalstorlek */
+    opacity: 1; /* Gör synlig */
 }
 
 
