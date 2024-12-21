@@ -184,6 +184,7 @@ main {
     margin-top: 20px;
     height: 600px;
     width: 600px;
+    z-index: 1;
 
 }
 
@@ -627,5 +628,52 @@ h2 {
 
 .roll-4 img {
     width: 50%;
+    height: auto;
+}
+
+#number-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Mellanrum mellan rutorna */
+    margin: 20px 0; /* Lite mellanrum ovanför och under */
+    margin-top: 45%;
+}
+
+.number-box {
+    width: 40px; /* Samma bredd som alfabet-knapparna */
+    height: 40px; /* Samma höjd som alfabet-knapparna */
+    background: #FBFBFB; /* Bakgrundsfärg */
+    border: 1px solid #ccc; /* Ram */
+    border-radius: 5px; /* Rundade hörn */
+    display: flex;
+    justify-content: center; /* Centrera text horisontellt */
+    align-items: center; /* Centrera text vertikalt */
+    font-size: 20px; /* Gör siffrorna tydliga */
+    font-weight: bold; /* Fet text */
+    color: #333; /* Färg på siffrorna */
+}
+
+.number-box.correct {
+    background-color: #28a745; /* Grön bakgrund för rätt svar */
+    color: #fff; /* Vit text */
+}
+
+.number-box.incorrect {
+    background-color: #dc3545; /* Röd bakgrund för fel svar */
+    color: #fff; /* Vit text */
+}
+
+.willowbubbla2 {
+    z-index: 2;
+    position: absolute;
+    width: 100%; /* Anpassa till förälderns bredd */
+    height: 100%;
+    top: 50%;        /* Placera den 10% från botten av fönstret */
+    left: -20%;
+}
+
+.willowbubbla2 img {
+    width: 25%;
     height: auto;
 }
