@@ -1,5 +1,5 @@
 function hide() {
-   const buttons = document.querySelectorAll('.stone-button, .leaf-button');
+   const buttons = document.querySelectorAll('.stone-button, .leaf-button, .branch-button');
    buttons.forEach(button => {
        button.style.display = 'none'; // Göm varje matchande element
    });
@@ -18,6 +18,14 @@ function hide() {
   if (stoneOne && stoneTwo) {
      stoneOne.style.display = 'none'; // Göm willow-leaf-one
      stoneTwo.style.display = 'block'; // Visa willow-leaf-two
+ }
+
+ const branchOne = document.querySelector('.willow-branch-one');
+  const branchTwo = document.querySelector('.willow-branch-two');
+
+  if (branchOne && branchTwo) {
+     branchOne.style.display = 'none'; // Göm willow-leaf-one
+     branchTwo.style.display = 'block'; // Visa willow-leaf-two
  }
 
 }

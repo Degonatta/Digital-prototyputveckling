@@ -460,6 +460,16 @@ h2 {
     max-width: 200px;
     height: auto;
 }
+.clue4-container {
+    position: relative; /* Referenspunkt för de absoluta bilderna */
+    position: absolute; /* Säkerställ att den kan placeras exakt */
+    bottom: 45%;        /* Placera den 10% från botten av fönstret */
+    left: 28%;          /* Placera den i mitten av fönstret horisontellt */
+    transform: translateX(-50%,); /* Justera så att mitten av bilden är i mitten av fönstret */
+    width: 15vw;       /* Ange den exakta bredden */
+    max-width: 200px;
+    height: auto;
+}
 
 .stone-button {
     position: absolute;
@@ -526,6 +536,52 @@ h2 {
     height: auto;
 }
 
+.willow-branch-one {
+    position: absolute;
+    width: 100%; /* Anpassa till förälderns bredd */
+    height: 100%;
+    top: 65%;        /* Placera den 10% från botten av fönstret */
+    left: 60%;
+    transition: transform 1s ease, opacity 1s ease; /* För smidig övergång */
+
+}
+
+.willow-branch-one img{
+    width: 15%;
+    height: auto;
+    transform: scaleX(-1); /* Spegelvänd bilden horisontellt */
+}
+
+.willow-branch-two {
+    position: absolute;
+    width: 100%; /* Anpassa till förälderns bredd */
+    height: 100%;
+    top: 65%;        /* Placera den 10% från botten av fönstret */
+    left: 45%;
+    display: none;
+}
+
+.willow-branch-two img{
+    width: 15%;
+    height: auto;
+}
+
+.branch-button {
+    position: absolute;
+    width: 100%; /* Anpassa till förälderns bredd */
+    height: 100%;
+    background: none; /* Ta bort bakgrund från knappen */
+    border: none; /* Ta bort knappens standardborder */
+    padding: 0; /* Ta bort onödigt mellanrum */
+    cursor: pointer; /* För att indikera att det är klickbart */
+    z-index: 2; /* Se till att stenen ligger överst */
+}
+
+.branch-image {
+    width: 100%; /* Fyll containern */
+    height: auto;
+    
+}
 .roll-2 {
     position: absolute;
     top: 0;
@@ -555,5 +611,21 @@ h2 {
 
 .roll-3 img {
     width: 60%;
+    height: auto;
+}
+
+.roll-4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Lägre än stenen */
+    margin-top: -10%;
+    margin-left: 20%;
+}
+
+.roll-4 img {
+    width: 50%;
     height: auto;
 }
