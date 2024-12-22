@@ -677,3 +677,7 @@ h2 {
     width: 25%;
     height: auto;
 }
+
+@view-transition {
+    navigation: auto;
+}
