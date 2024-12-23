@@ -534,31 +534,33 @@ h2 {
 }
 
 .willow-leaf-one {
-    position: absolute;
-    width: 100%; /* Anpassa till förälderns bredd */
-    height: 100%;
-    top: 38%;        /* Placera den 10% från botten av fönstret */
-    left: 56%;
+    position: absolute; /* Säkerställ att den kan placeras exakt */
+    bottom: 40%;        /* Placera den 10% från botten av fönstret */
+    left: 65%;          /* Placera den i mitten av fönstret horisontellt */
+    transform: translateX(-50%); /* Justera så att mitten av bilden är i mitten av fönstret */
+    width: 250px;       /* Ange den exakta bredden */
+    z-index: 1;         /* Se till att den syns över andra element */
     transition: transform 1s ease, opacity 1s ease; /* För smidig övergång */
 
 }
 
 .willow-leaf-one img{
-    width: 10%;
+    width: 70%;
     height: auto;
 }
 
 .willow-leaf-two {
-    position: absolute;
-    width: 100%; /* Anpassa till förälderns bredd */
-    height: 100%;
-    top: 50%;        /* Placera den 10% från botten av fönstret */
-    left: 65%;
+    position: absolute; /* Säkerställ att den kan placeras exakt */
+    bottom: 20%;        /* Placera den 10% från botten av fönstret */
+    left: 75%;          /* Placera den i mitten av fönstret horisontellt */
+    transform: translateX(-50%); /* Justera så att mitten av bilden är i mitten av fönstret */
+    width: 250px;       /* Ange den exakta bredden */
+    z-index: 1;         /* Se till att den syns över andra element */
     display: none;
 }
 
 .willow-leaf-two img{
-    width: 15%;
+    width: 90%;
     height: auto;
 }
 
