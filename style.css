@@ -479,20 +479,20 @@ h2 {
 .clue3-container {
     position: relative; /* Referenspunkt för de absoluta bilderna */
     position: absolute; /* Säkerställ att den kan placeras exakt */
-    bottom: 28%;        /* Placera den 10% från botten av fönstret */
-    left: 50%;          /* Placera den i mitten av fönstret horisontellt */
+    bottom: 35%;        /* Placera den 10% från botten av fönstret */
+    left: 40%;          /* Placera den i mitten av fönstret horisontellt */
     transform: translateX(-50%,); /* Justera så att mitten av bilden är i mitten av fönstret */
-    width: 15vw;       /* Ange den exakta bredden */
+    width: 30vw;       /* Ange den exakta bredden */
     max-width: 200px;
     height: auto;
 }
 .clue4-container {
     position: relative; /* Referenspunkt för de absoluta bilderna */
     position: absolute; /* Säkerställ att den kan placeras exakt */
-    bottom: 45%;        /* Placera den 10% från botten av fönstret */
+    bottom: 75%;        /* Placera den 10% från botten av fönstret */
     left: 28%;          /* Placera den i mitten av fönstret horisontellt */
     transform: translateX(-50%,); /* Justera så att mitten av bilden är i mitten av fönstret */
-    width: 15vw;       /* Ange den exakta bredden */
+    width: 40vw;       /* Ange den exakta bredden */
     max-width: 200px;
     height: auto;
 }
