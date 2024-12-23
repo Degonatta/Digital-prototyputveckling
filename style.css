@@ -690,16 +690,16 @@ h2 {
 }
 
 .willowbubbla2 {
-    z-index: 2;
-    position: absolute;
-    width: 100%; /* Anpassa till förälderns bredd */
-    height: 100%;
-    top: 50%;        /* Placera den 10% från botten av fönstret */
-    left: -30%;
+    position: absolute; /* Säkerställ att den kan placeras exakt */
+    bottom: 0.5%;        /* Placera den 10% från botten av fönstret */
+    left: 25%;          /* Placera den i mitten av fönstret horisontellt */
+    transform: translateX(-50%); /* Justera så att mitten av bilden är i mitten av fönstret */
+    width: 250px;       /* Ange den exakta bredden */
+    z-index: 2;         /* Se till att den syns över andra element */
 }
 
 .willowbubbla2 img {
-    width: 25%;
+    width: 120%;
     height: auto;
 }
 
