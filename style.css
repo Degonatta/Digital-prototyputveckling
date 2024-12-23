@@ -124,8 +124,8 @@ main {
 }
 
 .alphabet-buttons button {
-    width: 40px; /* Justera bredd */
     height: 40px; /* Justera höjd */
+    width: 40px; /* Justera bredd */
     background: #FBFBFB;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -363,7 +363,7 @@ h2 {
 .willowClueOne {
     position: absolute; /* Säkerställ att den kan placeras exakt */
     bottom: 0.5%;        /* Placera den 10% från botten av fönstret */
-    left: 82%;          /* Placera den i mitten av fönstret horisontellt */
+    left: 80%;          /* Placera den i mitten av fönstret horisontellt */
     transform: translateX(-50%); /* Justera så att mitten av bilden är i mitten av fönstret */
     width: 300px;       /* Ange den exakta bredden */
     z-index: 2;         /* Se till att den syns över andra element */
@@ -371,7 +371,7 @@ h2 {
 }
 
 .willowClueOne img {
-    width: 40%;         /* Justera storleken relativt till förälderns bredd */
+    width: 75%;         /* Justera storleken relativt till förälderns bredd */
     height: auto;       /* Bevara bildens proportioner */
 }
 
@@ -455,7 +455,7 @@ h2 {
 .roll {
     position: absolute; /* Säkerställ att den kan placeras exakt */
     bottom: 12%;        /* Placera den 10% från botten av fönstret */
-    left: 48%;          /* Placera den i mitten av fönstret horisontellt */
+    left: 40%;          /* Placera den i mitten av fönstret horisontellt */
     transform: translateX(-50%,); /* Justera så att mitten av bilden är i mitten av fönstret */
     width: 15vw;       /* Ange den exakta bredden */
     max-width: 300px;
@@ -563,32 +563,34 @@ h2 {
 }
 
 .willow-branch-one {
-    position: absolute;
-    width: 100%; /* Anpassa till förälderns bredd */
-    height: 100%;
-    top: 65%;        /* Placera den 10% från botten av fönstret */
-    left: 60%;
+    position: absolute; /* Säkerställ att den kan placeras exakt */
+    bottom: 0.5%;        /* Placera den 10% från botten av fönstret */
+    left: 70%;          /* Placera den i mitten av fönstret horisontellt */
+    transform: translateX(-50%); /* Justera så att mitten av bilden är i mitten av fönstret */
+    width: 250px;       /* Ange den exakta bredden */
+    z-index: 1;         /* Se till att den syns över andra element */
     transition: transform 1s ease, opacity 1s ease; /* För smidig övergång */
 
 }
 
 .willow-branch-one img{
-    width: 15%;
+    width: 110%;
     height: auto;
     transform: scaleX(-1); /* Spegelvänd bilden horisontellt */
 }
 
 .willow-branch-two {
-    position: absolute;
-    width: 100%; /* Anpassa till förälderns bredd */
-    height: 100%;
-    top: 65%;        /* Placera den 10% från botten av fönstret */
-    left: 45%;
+    position: absolute; /* Säkerställ att den kan placeras exakt */
+    bottom: 0.5%;        /* Placera den 10% från botten av fönstret */
+    left: 50%;          /* Placera den i mitten av fönstret horisontellt */
+    transform: translateX(-50%); /* Justera så att mitten av bilden är i mitten av fönstret */
+    width: 250px;       /* Ange den exakta bredden */
+    z-index: 1;         /* Se till att den syns över andra element */
     display: none;
 }
 
 .willow-branch-two img{
-    width: 15%;
+    width: 110%;
     height: auto;
 }
 
@@ -666,17 +668,18 @@ h2 {
 }
 
 .number-box {
-    width: 40px; /* Samma bredd som alfabet-knapparna */
-    height: 40px; /* Samma höjd som alfabet-knapparna */
+    width: 60px; /* Samma bredd som alfabet-knapparna */
+    height: 60px; /* Samma höjd som alfabet-knapparna */
     background: #FBFBFB; /* Bakgrundsfärg */
     border: 1px solid #ccc; /* Ram */
     border-radius: 5px; /* Rundade hörn */
     display: flex;
     justify-content: center; /* Centrera text horisontellt */
     align-items: center; /* Centrera text vertikalt */
-    font-size: 20px; /* Gör siffrorna tydliga */
+    font-size: 50px; /* Gör siffrorna tydliga */
     font-weight: bold; /* Fet text */
     color: #333; /* Färg på siffrorna */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .number-box.correct {
