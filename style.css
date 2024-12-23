@@ -81,6 +81,16 @@ body, html {
     width: 100vw;  
 }
 
+.cluefive-page{
+    position: relative;
+    background-image: url(Picture/BackgroundClue5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+    height: 100vh;
+    width: 100vw;  
+}
+
 .the-end-page {
     background-image: url(/Picture/TheEnd.png);
     background-repeat: no-repeat;
@@ -361,6 +371,21 @@ h2 {
 }
 
 .willowClueOne img {
+    width: 40%;         /* Justera storleken relativt till förälderns bredd */
+    height: auto;       /* Bevara bildens proportioner */
+}
+
+.willowClueFive {
+    position: absolute; /* Säkerställ att den kan placeras exakt */
+    bottom: 0.5%;        /* Placera den 10% från botten av fönstret */
+    left: 55%;          /* Placera den i mitten av fönstret horisontellt */
+    transform: translateX(-50%); /* Justera så att mitten av bilden är i mitten av fönstret */
+    width: 400px;       /* Ange den exakta bredden */
+    z-index: 2;         /* Se till att den syns över andra element */
+
+}
+
+.willowClueFive img {
     width: 40%;         /* Justera storleken relativt till förälderns bredd */
     height: auto;       /* Bevara bildens proportioner */
 }
@@ -670,12 +695,28 @@ h2 {
     width: 100%; /* Anpassa till förälderns bredd */
     height: 100%;
     top: 50%;        /* Placera den 10% från botten av fönstret */
-    left: -20%;
+    left: -30%;
 }
 
 .willowbubbla2 img {
     width: 25%;
     height: auto;
+}
+
+
+.willowkod {
+    position: absolute; /* Säkerställ att den kan placeras exakt */
+    bottom: 0.5%;        /* Placera den 10% från botten av fönstret */
+    left: 5%;          /* Placera den i mitten av fönstret horisontellt */
+    transform: translateX(-50%); /* Justera så att mitten av bilden är i mitten av fönstret */
+    width: 250px;       /* Ange den exakta bredden */
+    z-index: 2;         /* Se till att den syns över andra element */
+    transform: scaleX(-1); /* Spegelvänd bilden horisontellt */
+}
+
+.willowkod img {
+    width: 110%;         /* Justera storleken relativt till förälderns bredd */
+    height: auto;       /* Bevara bildens proportioner */
 }
 
 @view-transition {
