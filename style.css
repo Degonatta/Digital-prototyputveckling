@@ -269,8 +269,8 @@ main {
 }
 
 .easy-button{
-    width: 69px;
-    height: 27px;
+    width: 120px;
+    height: 40px;
     background: #C0FFB7;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Skugga */
     border-radius: 19px;
@@ -278,12 +278,14 @@ main {
     align-items: center; /* Centrera texten vertikalt */
     border: none;
     z-index: 3;         /* Se till att den syns över andra element */
-
+    cursor: pointer;          /* Ändra muspekaren vid hovring */
+    font-size: large;
+    font-weight: bold;
 }
 
 .medium-button {
-    width: 69px;
-    height: 27px;
+    width: 120px;
+    height: 40px;
     background: #FFF67E;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Skugga */
     border-radius: 19px;
@@ -291,12 +293,15 @@ main {
     align-items: center; /* Centrera texten vertikalt */
     border: none;
     z-index: 3;         /* Se till att den syns över andra element */
-
+    cursor: pointer;          /* Ändra muspekaren vid hovring */
+    font-size: large;
+    font-weight: bold;
+    margin: 2%;
 }
 
 .hard-button {
-    width: 69px;
-    height: 27px;
+    width: 120px;
+    height: 40px;
     background: #FFA8A8;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Skugga */
     border-radius: 19px;
@@ -304,7 +309,9 @@ main {
     align-items: center; /* Centrera texten vertikalt */
     border: none;
     z-index: 3;         /* Se till att den syns över andra element */
-
+    cursor: pointer;          /* Ändra muspekaren vid hovring */
+    font-size: large;
+    font-weight: bold;
 }
 
 h2 {
