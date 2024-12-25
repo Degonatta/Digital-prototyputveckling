@@ -209,7 +209,12 @@ main {
     text-align: center;
     height: 700px;
     width: 700px;
-
+    position: relative;
+}
+@media (max-width: 1100px) {
+    .map-one {
+        margin-top: 50px; /* Flyttar rutan nedåt */
+    }
 }
 
 .map-two {
@@ -223,7 +228,12 @@ main {
     text-align: center;
     height: 700px;
     width: 700px;
-
+    position: relative;
+}
+@media (max-width: 1100px) {
+    .map-two {
+        margin-top: 50px; /* Flyttar rutan nedåt */
+    }
 }
 
 .map-three {
@@ -237,7 +247,12 @@ main {
     text-align: center;
     height: 700px;
     width: 700px;
-
+    position: relative;
+}
+@media (max-width: 1100px) {
+    .map-three {
+        margin-top: 50px; /* Flyttar rutan nedåt */
+    }
 }
 
 .map-four {
@@ -251,7 +266,12 @@ main {
     text-align: center;
     height: 700px;
     width: 700px;
-
+    position: relative;
+}
+@media (max-width: 1100px) {
+    .map-four {
+        margin-top: 50px; /* Flyttar rutan nedåt */
+    }
 }
 
 .map-five {
@@ -265,7 +285,12 @@ main {
     text-align: center;
     height: 700px;
     width: 700px;
-
+    position: relative;
+}
+@media (max-width: 1100px) {
+    .map-five {
+        margin-top: 50px; /* Flyttar rutan nedåt */
+    }
 }
 
 .easy-button{
@@ -319,7 +344,7 @@ h2 {
 }
 
 .text-container {
-    padding-top: 200px; /* Flyttar bara texten inom .text-container nedåt */
+    padding-top: 160px; /* Flyttar bara texten inom .text-container nedåt */
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -730,6 +755,27 @@ h2 {
 .willowkod img {
     width: 110%;         /* Justera storleken relativt till förälderns bredd */
     height: auto;       /* Bevara bildens proportioner */
+}
+
+.forward-button {
+    width: 20%;         /* Justera storleken relativt till förälderns bredd */
+    cursor: pointer;
+    z-index: 3;
+}
+
+.forward-map-button {
+    position: absolute;
+    top: 40%;
+    left: 102%;
+    width: 25%;
+    cursor: pointer;
+}
+@media (max-width: 1100px) {
+    .forward-map-button {
+        top: -5%;
+        left: 40%;
+        width: 25%;
+    }
 }
 
 @view-transition {
