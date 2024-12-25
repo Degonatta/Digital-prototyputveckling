@@ -17,7 +17,7 @@ let nuvarandeIndex = 0; // Håller reda på vilken siffra som ska matchas
 
 // Funktion för att dölja vissa element på sidan
 function hide() {
-  const buttons = document.querySelectorAll('.stone-button, .leaf-button, .branch-button');
+  const buttons = document.querySelectorAll('.stone-button, .leaf-button, .branch-button, .mushroom-button');
   buttons.forEach(button => {
       button.style.display = 'none'; // Göm varje matchande element
   });
@@ -44,6 +44,14 @@ function hide() {
   if (branchOne && branchTwo) {
      branchOne.style.display = 'none'; // Göm willow-leaf-one
      branchTwo.style.display = 'block'; // Visa willow-leaf-two
+  }
+
+  const mushroomOne = document.querySelector('.willow-mushroom-one');
+  const mushroomTwo = document.querySelector('.willow-mushroom-two');
+
+  if (mushroomOne && mushroomTwo) {
+     mushroomOne.style.display = 'none'; // Göm willow-leaf-one
+     mushroomTwo.style.display = 'block'; // Visa willow-leaf-two
   }
 }
 

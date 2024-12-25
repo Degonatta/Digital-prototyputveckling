@@ -407,20 +407,6 @@ h2 {
     height: auto;       /* Bevara bildens proportioner */
 }
 
-.willowClueFive {
-    position: absolute; /* Säkerställ att den kan placeras exakt */
-    bottom: 0.5%;        /* Placera den 10% från botten av fönstret */
-    left: 55%;          /* Placera den i mitten av fönstret horisontellt */
-    transform: translateX(-50%); /* Justera så att mitten av bilden är i mitten av fönstret */
-    width: 400px;       /* Ange den exakta bredden */
-    z-index: 2;         /* Se till att den syns över andra element */
-
-}
-
-.willowClueFive img {
-    width: 40%;         /* Justera storleken relativt till förälderns bredd */
-    height: auto;       /* Bevara bildens proportioner */
-}
 
 .willow-stone-one {
     position: absolute; /* Säkerställ att den kan placeras exakt */
@@ -518,7 +504,19 @@ h2 {
     max-width: 200px;
     height: auto;
 }
+
 .clue4-container {
+    position: relative; /* Referenspunkt för de absoluta bilderna */
+    position: absolute; /* Säkerställ att den kan placeras exakt */
+    bottom: 75%;        /* Placera den 10% från botten av fönstret */
+    left: 28%;          /* Placera den i mitten av fönstret horisontellt */
+    transform: translateX(-50%,); /* Justera så att mitten av bilden är i mitten av fönstret */
+    width: 40vw;       /* Ange den exakta bredden */
+    max-width: 200px;
+    height: auto;
+}
+
+.clue5-container {
     position: relative; /* Referenspunkt för de absoluta bilderna */
     position: absolute; /* Säkerställ att den kan placeras exakt */
     bottom: 75%;        /* Placera den 10% från botten av fönstret */
@@ -563,6 +561,25 @@ h2 {
     width: 100%; /* Fyll containern */
     height: auto;
     
+}
+
+.mushroom-button {
+    position: absolute;
+    width: 100%; /* Anpassa till förälderns bredd */
+    height: 100%;
+    background: none; /* Ta bort bakgrund från knappen */
+    border: none; /* Ta bort knappens standardborder */
+    padding: 0; /* Ta bort onödigt mellanrum */
+    cursor: pointer; /* För att indikera att det är klickbart */
+    z-index: 2; /* Se till att stenen ligger överst */
+    right: 20%;
+    top: 50px;
+}
+
+.mushroom-image
+{
+    width: 80%; /* Fyll containern */
+    height: auto;
 }
 
 .willow-leaf-one {
@@ -628,6 +645,38 @@ h2 {
     height: auto;
 }
 
+.willow-mushroom-one {
+    position: absolute; /* Säkerställ att den kan placeras exakt */
+    bottom: -3%;        /* Placera den 10% från botten av fönstret */
+    left: 50%;          /* Placera den i mitten av fönstret horisontellt */
+    transform: translateX(-50%); /* Justera så att mitten av bilden är i mitten av fönstret */
+    width: 250px;       /* Ange den exakta bredden */
+    z-index: 1;         /* Se till att den syns över andra element */
+    transition: transform 1s ease, opacity 1s ease; /* För smidig övergång */
+
+}
+
+.willow-mushroom-one img{
+    width: 70%;
+    height: auto;
+    transform: scaleX(-1); /* Spegelvänd bilden horisontellt */
+}
+
+.willow-mushroom-two {
+    position: absolute; /* Säkerställ att den kan placeras exakt */
+    bottom: 20%;        /* Placera den 10% från botten av fönstret */
+    left: 40%;          /* Placera den i mitten av fönstret horisontellt */
+    transform: translateX(-50%); /* Justera så att mitten av bilden är i mitten av fönstret */
+    width: 250px;       /* Ange den exakta bredden */
+    z-index: 1;         /* Se till att den syns över andra element */
+    display: none;
+}
+
+.willow-mushroom-two img{
+    width: 100%;
+    height: auto;
+}
+
 .branch-button {
     position: absolute;
     width: 100%; /* Anpassa till förälderns bredd */
@@ -688,6 +737,20 @@ h2 {
 }
 
 .roll-4 img {
+    width: 50%;
+    height: auto;
+}
+
+.roll-5 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Lägre än stenen */
+    margin-top: 22%;
+    margin-left: -7%;
+}
+
+.roll-5 img {
     width: 50%;
     height: auto;
 }
