@@ -820,6 +820,21 @@ h2 {
     height: auto;       /* Bevara bildens proportioner */
 }
 
+.treasure-closed {
+    position: absolute; /* Säkerställ att den kan placeras exakt */
+    bottom: -5%;        /* Placera den 10% från botten av fönstret */
+    left: 42%;          /* Placera den i mitten av fönstret horisontellt */
+    transform: translateX(-50%); /* Justera så att mitten av bilden är i mitten av fönstret */
+    width: 250px;       /* Ange den exakta bredden */
+    z-index: 2;         /* Se till att den syns över andra element */
+    transform: scaleX(-1); /* Spegelvänd bilden horisontellt */
+}
+
+.treasure-closed img {
+    width: 120%;         /* Justera storleken relativt till förälderns bredd */
+    height: auto;       /* Bevara bildens proportioner */
+}
+
 .forward-button {
     width: 20%;         /* Justera storleken relativt till förälderns bredd */
     cursor: pointer;
