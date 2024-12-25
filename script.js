@@ -80,7 +80,9 @@ function kontrolleraBokstav(bokstav) {
      const numberDisplay = document.getElementById("number-display");
      const rutor = numberDisplay.querySelectorAll(".number-box"); // Använd rätt klass
      rutor[nuvarandeIndex].textContent = bokstav; // Ändra siffran till bokstav
+     rutor[nuvarandeIndex].classList.add("correct");
      nuvarandeIndex++; // Gå vidare till nästa siffra
+     
 
      // Kontrollera om ordet är klart
      if (nuvarandeIndex === siffror.length) {
