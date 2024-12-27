@@ -4,7 +4,7 @@ const ordDict = {
    "roll-2": "SIMMA",
    "roll-3": "GREN",
    "roll-4": "SVAMP",
-   "roll-5": "WILLOW"
+   "roll-5": null
 };
 
 // Hämta roll-parametern från URL
@@ -17,7 +17,7 @@ let nuvarandeIndex = 0; // Håller reda på vilken siffra som ska matchas
 
 // Funktion för att dölja vissa element på sidan
 function hide() {
-  const buttons = document.querySelectorAll('.stone-button, .leaf-button, .branch-button');
+  const buttons = document.querySelectorAll('.stone-button, .leaf-button, .branch-button, .mushroom-button');
   buttons.forEach(button => {
       button.style.display = 'none'; // Göm varje matchande element
   });
@@ -44,6 +44,14 @@ function hide() {
   if (branchOne && branchTwo) {
      branchOne.style.display = 'none'; // Göm willow-leaf-one
      branchTwo.style.display = 'block'; // Visa willow-leaf-two
+  }
+
+  const mushroomOne = document.querySelector('.willow-mushroom-one');
+  const mushroomTwo = document.querySelector('.willow-mushroom-two');
+
+  if (mushroomOne && mushroomTwo) {
+     mushroomOne.style.display = 'none'; // Göm willow-leaf-one
+     mushroomTwo.style.display = 'block'; // Visa willow-leaf-two
   }
 }
 
@@ -80,7 +88,9 @@ function kontrolleraBokstav(bokstav) {
      const numberDisplay = document.getElementById("number-display");
      const rutor = numberDisplay.querySelectorAll(".number-box"); // Använd rätt klass
      rutor[nuvarandeIndex].textContent = bokstav; // Ändra siffran till bokstav
+     rutor[nuvarandeIndex].classList.add("correct");
      nuvarandeIndex++; // Gå vidare till nästa siffra
+     
 
      // Kontrollera om ordet är klart
      if (nuvarandeIndex === siffror.length) {
@@ -111,6 +121,47 @@ document.querySelectorAll(".role-button").forEach(button => {
 // Visa siffrorna när sidan laddas
 visaSiffror(siffror);
 
+// Hämta slumpmässigt ord från JSON-fil
+async function fetchRandomWord() {
+   try {
+     const response = await fetch('words.json'); // JSON-fil med ord
+     const data = await response.json();
+     const words = data.words;
+ 
+     if (words && words.length > 0) {
+       // Slumpa ett ord
+       const randomIndex = Math.floor(Math.random() * words.length);
+       ordDict["roll-5"] = words[randomIndex];
+     } else {
+       console.error("JSON-filen innehåller inga ord.");
+     }
+   } catch (error) {
+     console.error("Kunde inte läsa JSON-filen:", error);
+   }
+ }
+ 
+ // Kör funktionen när sidan laddas
+ fetchRandomWord().then(() => {
+   // Hämta roll-parametern från URL
+ 
+   ord = ordDict[rollVald] || null; // Standardord, du kan ändra här till exempelvis "roll-one"
+   siffror = ordTillSiffror(ord); // Gör om ordet till siffror
+   nuvarandeIndex = 0; // Håller reda på vilken siffra som ska matchas
+ 
+   // Visa siffrorna när sidan laddas
+   visaSiffror(siffror);
+ 
+   // Lägg till event-lyssnare för att uppdatera ordet baserat på rollen
+   document.querySelectorAll(".role-button").forEach(button => {
+     button.addEventListener("click", () => {
+       const roll = button.dataset.role; // Hämta den roll som valts (t.ex. "roll-5")
+       ord = ordDict[roll]; // Uppdatera ordet baserat på rollen
+       siffror = ordTillSiffror(ord); // Konvertera det nya ordet till siffror
+       nuvarandeIndex = 0; // Återställ index
+       visaSiffror(siffror); // Visa siffrorna för det nya ordet
+     });
+   });
+ });
 
 
 //Array som parar bokstav mot siffra

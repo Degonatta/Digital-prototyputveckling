@@ -81,6 +81,16 @@ body, html {
     width: 100vw;  
 }
 
+.cluefive-page{
+    position: relative;
+    background-image: url(Picture/BackgroundClue5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+    height: 100vh;
+    width: 100vw;  
+}
+
 .the-end-page {
     background-image: url(/Picture/TheEnd.png);
     background-repeat: no-repeat;
@@ -114,8 +124,8 @@ main {
 }
 
 .alphabet-buttons button {
-    width: 40px; /* Justera bredd */
     height: 40px; /* Justera höjd */
+    width: 40px; /* Justera bredd */
     background: #FBFBFB;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -199,7 +209,12 @@ main {
     text-align: center;
     height: 700px;
     width: 700px;
-
+    position: relative;
+}
+@media (max-width: 1100px) {
+    .map-one {
+        margin-top: 50px; /* Flyttar rutan nedåt */
+    }
 }
 
 .map-two {
@@ -213,7 +228,12 @@ main {
     text-align: center;
     height: 700px;
     width: 700px;
-
+    position: relative;
+}
+@media (max-width: 1100px) {
+    .map-two {
+        margin-top: 50px; /* Flyttar rutan nedåt */
+    }
 }
 
 .map-three {
@@ -227,7 +247,12 @@ main {
     text-align: center;
     height: 700px;
     width: 700px;
-
+    position: relative;
+}
+@media (max-width: 1100px) {
+    .map-three {
+        margin-top: 50px; /* Flyttar rutan nedåt */
+    }
 }
 
 .map-four {
@@ -241,7 +266,12 @@ main {
     text-align: center;
     height: 700px;
     width: 700px;
-
+    position: relative;
+}
+@media (max-width: 1100px) {
+    .map-four {
+        margin-top: 50px; /* Flyttar rutan nedåt */
+    }
 }
 
 .map-five {
@@ -255,12 +285,17 @@ main {
     text-align: center;
     height: 700px;
     width: 700px;
-
+    position: relative;
+}
+@media (max-width: 1100px) {
+    .map-five {
+        margin-top: 50px; /* Flyttar rutan nedåt */
+    }
 }
 
 .easy-button{
-    width: 69px;
-    height: 27px;
+    width: 120px;
+    height: 40px;
     background: #C0FFB7;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Skugga */
     border-radius: 19px;
@@ -268,12 +303,14 @@ main {
     align-items: center; /* Centrera texten vertikalt */
     border: none;
     z-index: 3;         /* Se till att den syns över andra element */
-
+    cursor: pointer;          /* Ändra muspekaren vid hovring */
+    font-size: large;
+    font-weight: bold;
 }
 
 .medium-button {
-    width: 69px;
-    height: 27px;
+    width: 120px;
+    height: 40px;
     background: #FFF67E;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Skugga */
     border-radius: 19px;
@@ -281,12 +318,15 @@ main {
     align-items: center; /* Centrera texten vertikalt */
     border: none;
     z-index: 3;         /* Se till att den syns över andra element */
-
+    cursor: pointer;          /* Ändra muspekaren vid hovring */
+    font-size: large;
+    font-weight: bold;
+    margin: 2%;
 }
 
 .hard-button {
-    width: 69px;
-    height: 27px;
+    width: 120px;
+    height: 40px;
     background: #FFA8A8;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Skugga */
     border-radius: 19px;
@@ -294,7 +334,9 @@ main {
     align-items: center; /* Centrera texten vertikalt */
     border: none;
     z-index: 3;         /* Se till att den syns över andra element */
-
+    cursor: pointer;          /* Ändra muspekaren vid hovring */
+    font-size: large;
+    font-weight: bold;
 }
 
 h2 {
@@ -302,7 +344,7 @@ h2 {
 }
 
 .text-container {
-    padding-top: 200px; /* Flyttar bara texten inom .text-container nedåt */
+    padding-top: 160px; /* Flyttar bara texten inom .text-container nedåt */
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -353,7 +395,7 @@ h2 {
 .willowClueOne {
     position: absolute; /* Säkerställ att den kan placeras exakt */
     bottom: 0.5%;        /* Placera den 10% från botten av fönstret */
-    left: 82%;          /* Placera den i mitten av fönstret horisontellt */
+    left: 80%;          /* Placera den i mitten av fönstret horisontellt */
     transform: translateX(-50%); /* Justera så att mitten av bilden är i mitten av fönstret */
     width: 300px;       /* Ange den exakta bredden */
     z-index: 2;         /* Se till att den syns över andra element */
@@ -361,9 +403,10 @@ h2 {
 }
 
 .willowClueOne img {
-    width: 40%;         /* Justera storleken relativt till förälderns bredd */
+    width: 75%;         /* Justera storleken relativt till förälderns bredd */
     height: auto;       /* Bevara bildens proportioner */
 }
+
 
 .willow-stone-one {
     position: absolute; /* Säkerställ att den kan placeras exakt */
@@ -430,7 +473,7 @@ h2 {
 .roll {
     position: absolute; /* Säkerställ att den kan placeras exakt */
     bottom: 12%;        /* Placera den 10% från botten av fönstret */
-    left: 48%;          /* Placera den i mitten av fönstret horisontellt */
+    left: 40%;          /* Placera den i mitten av fönstret horisontellt */
     transform: translateX(-50%,); /* Justera så att mitten av bilden är i mitten av fönstret */
     width: 15vw;       /* Ange den exakta bredden */
     max-width: 300px;
@@ -454,20 +497,32 @@ h2 {
 .clue3-container {
     position: relative; /* Referenspunkt för de absoluta bilderna */
     position: absolute; /* Säkerställ att den kan placeras exakt */
-    bottom: 28%;        /* Placera den 10% från botten av fönstret */
-    left: 50%;          /* Placera den i mitten av fönstret horisontellt */
+    bottom: 35%;        /* Placera den 10% från botten av fönstret */
+    left: 40%;          /* Placera den i mitten av fönstret horisontellt */
     transform: translateX(-50%,); /* Justera så att mitten av bilden är i mitten av fönstret */
-    width: 15vw;       /* Ange den exakta bredden */
+    width: 30vw;       /* Ange den exakta bredden */
     max-width: 200px;
     height: auto;
 }
+
 .clue4-container {
     position: relative; /* Referenspunkt för de absoluta bilderna */
     position: absolute; /* Säkerställ att den kan placeras exakt */
-    bottom: 45%;        /* Placera den 10% från botten av fönstret */
+    bottom: 75%;        /* Placera den 10% från botten av fönstret */
     left: 28%;          /* Placera den i mitten av fönstret horisontellt */
     transform: translateX(-50%,); /* Justera så att mitten av bilden är i mitten av fönstret */
-    width: 15vw;       /* Ange den exakta bredden */
+    width: 40vw;       /* Ange den exakta bredden */
+    max-width: 200px;
+    height: auto;
+}
+
+.clue5-container {
+    position: relative; /* Referenspunkt för de absoluta bilderna */
+    position: absolute; /* Säkerställ att den kan placeras exakt */
+    bottom: 75%;        /* Placera den 10% från botten av fönstret */
+    left: 28%;          /* Placera den i mitten av fönstret horisontellt */
+    transform: translateX(-50%,); /* Justera så att mitten av bilden är i mitten av fönstret */
+    width: 40vw;       /* Ange den exakta bredden */
     max-width: 200px;
     height: auto;
 }
@@ -508,62 +563,117 @@ h2 {
     
 }
 
-.willow-leaf-one {
+.mushroom-button {
     position: absolute;
     width: 100%; /* Anpassa till förälderns bredd */
     height: 100%;
-    top: 38%;        /* Placera den 10% från botten av fönstret */
-    left: 56%;
+    background: none; /* Ta bort bakgrund från knappen */
+    border: none; /* Ta bort knappens standardborder */
+    padding: 0; /* Ta bort onödigt mellanrum */
+    cursor: pointer; /* För att indikera att det är klickbart */
+    z-index: 2; /* Se till att stenen ligger överst */
+    right: 20%;
+    top: 50px;
+}
+
+.mushroom-image
+{
+    width: 80%; /* Fyll containern */
+    height: auto;
+}
+
+.willow-leaf-one {
+    position: absolute; /* Säkerställ att den kan placeras exakt */
+    bottom: 40%;        /* Placera den 10% från botten av fönstret */
+    left: 65%;          /* Placera den i mitten av fönstret horisontellt */
+    transform: translateX(-50%); /* Justera så att mitten av bilden är i mitten av fönstret */
+    width: 250px;       /* Ange den exakta bredden */
+    z-index: 1;         /* Se till att den syns över andra element */
     transition: transform 1s ease, opacity 1s ease; /* För smidig övergång */
 
 }
 
 .willow-leaf-one img{
-    width: 10%;
+    width: 70%;
     height: auto;
 }
 
 .willow-leaf-two {
-    position: absolute;
-    width: 100%; /* Anpassa till förälderns bredd */
-    height: 100%;
-    top: 50%;        /* Placera den 10% från botten av fönstret */
-    left: 65%;
+    position: absolute; /* Säkerställ att den kan placeras exakt */
+    bottom: 20%;        /* Placera den 10% från botten av fönstret */
+    left: 75%;          /* Placera den i mitten av fönstret horisontellt */
+    transform: translateX(-50%); /* Justera så att mitten av bilden är i mitten av fönstret */
+    width: 250px;       /* Ange den exakta bredden */
+    z-index: 1;         /* Se till att den syns över andra element */
     display: none;
 }
 
 .willow-leaf-two img{
-    width: 15%;
+    width: 90%;
     height: auto;
 }
 
 .willow-branch-one {
-    position: absolute;
-    width: 100%; /* Anpassa till förälderns bredd */
-    height: 100%;
-    top: 65%;        /* Placera den 10% från botten av fönstret */
-    left: 60%;
+    position: absolute; /* Säkerställ att den kan placeras exakt */
+    bottom: 0.5%;        /* Placera den 10% från botten av fönstret */
+    left: 70%;          /* Placera den i mitten av fönstret horisontellt */
+    transform: translateX(-50%); /* Justera så att mitten av bilden är i mitten av fönstret */
+    width: 250px;       /* Ange den exakta bredden */
+    z-index: 1;         /* Se till att den syns över andra element */
     transition: transform 1s ease, opacity 1s ease; /* För smidig övergång */
 
 }
 
 .willow-branch-one img{
-    width: 15%;
+    width: 110%;
     height: auto;
     transform: scaleX(-1); /* Spegelvänd bilden horisontellt */
 }
 
 .willow-branch-two {
-    position: absolute;
-    width: 100%; /* Anpassa till förälderns bredd */
-    height: 100%;
-    top: 65%;        /* Placera den 10% från botten av fönstret */
-    left: 45%;
+    position: absolute; /* Säkerställ att den kan placeras exakt */
+    bottom: 0.5%;        /* Placera den 10% från botten av fönstret */
+    left: 50%;          /* Placera den i mitten av fönstret horisontellt */
+    transform: translateX(-50%); /* Justera så att mitten av bilden är i mitten av fönstret */
+    width: 250px;       /* Ange den exakta bredden */
+    z-index: 1;         /* Se till att den syns över andra element */
     display: none;
 }
 
 .willow-branch-two img{
-    width: 15%;
+    width: 110%;
+    height: auto;
+}
+
+.willow-mushroom-one {
+    position: absolute; /* Säkerställ att den kan placeras exakt */
+    bottom: -3%;        /* Placera den 10% från botten av fönstret */
+    left: 50%;          /* Placera den i mitten av fönstret horisontellt */
+    transform: translateX(-50%); /* Justera så att mitten av bilden är i mitten av fönstret */
+    width: 250px;       /* Ange den exakta bredden */
+    z-index: 1;         /* Se till att den syns över andra element */
+    transition: transform 1s ease, opacity 1s ease; /* För smidig övergång */
+
+}
+
+.willow-mushroom-one img{
+    width: 70%;
+    height: auto;
+    transform: scaleX(-1); /* Spegelvänd bilden horisontellt */
+}
+
+.willow-mushroom-two {
+    position: absolute; /* Säkerställ att den kan placeras exakt */
+    bottom: 20%;        /* Placera den 10% från botten av fönstret */
+    left: 40%;          /* Placera den i mitten av fönstret horisontellt */
+    transform: translateX(-50%); /* Justera så att mitten av bilden är i mitten av fönstret */
+    width: 250px;       /* Ange den exakta bredden */
+    z-index: 1;         /* Se till att den syns över andra element */
+    display: none;
+}
+
+.willow-mushroom-two img{
+    width: 100%;
     height: auto;
 }
 
@@ -631,6 +741,20 @@ h2 {
     height: auto;
 }
 
+.roll-5 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Lägre än stenen */
+    margin-top: 22%;
+    margin-left: -7%;
+}
+
+.roll-5 img {
+    width: 50%;
+    height: auto;
+}
+
 #number-display {
     display: flex;
     justify-content: center;
@@ -641,17 +765,19 @@ h2 {
 }
 
 .number-box {
-    width: 40px; /* Samma bredd som alfabet-knapparna */
-    height: 40px; /* Samma höjd som alfabet-knapparna */
+    width: 60px; /* Samma bredd som alfabet-knapparna */
+    height: 60px; /* Samma höjd som alfabet-knapparna */
     background: #FBFBFB; /* Bakgrundsfärg */
     border: 1px solid #ccc; /* Ram */
     border-radius: 5px; /* Rundade hörn */
     display: flex;
     justify-content: center; /* Centrera text horisontellt */
     align-items: center; /* Centrera text vertikalt */
-    font-size: 20px; /* Gör siffrorna tydliga */
+    font-size: 50px; /* Gör siffrorna tydliga */
     font-weight: bold; /* Fet text */
     color: #333; /* Färg på siffrorna */
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background-color 0.5s ease;
 }
 
 .number-box.correct {
@@ -665,17 +791,69 @@ h2 {
 }
 
 .willowbubbla2 {
-    z-index: 2;
-    position: absolute;
-    width: 100%; /* Anpassa till förälderns bredd */
-    height: 100%;
-    top: 50%;        /* Placera den 10% från botten av fönstret */
-    left: -20%;
+    position: absolute; /* Säkerställ att den kan placeras exakt */
+    bottom: 0.5%;        /* Placera den 10% från botten av fönstret */
+    left: 20%;          /* Placera den i mitten av fönstret horisontellt */
+    transform: translateX(-50%); /* Justera så att mitten av bilden är i mitten av fönstret */
+    width: 250px;       /* Ange den exakta bredden */
+    z-index: 2;         /* Se till att den syns över andra element */
 }
 
 .willowbubbla2 img {
-    width: 25%;
+    width: 120%;
     height: auto;
+}
+
+
+.willowkod {
+    position: absolute; /* Säkerställ att den kan placeras exakt */
+    bottom: 0.5%;        /* Placera den 10% från botten av fönstret */
+    left: 5%;          /* Placera den i mitten av fönstret horisontellt */
+    transform: translateX(-50%); /* Justera så att mitten av bilden är i mitten av fönstret */
+    width: 250px;       /* Ange den exakta bredden */
+    z-index: 2;         /* Se till att den syns över andra element */
+    transform: scaleX(-1); /* Spegelvänd bilden horisontellt */
+}
+
+.willowkod img {
+    width: 110%;         /* Justera storleken relativt till förälderns bredd */
+    height: auto;       /* Bevara bildens proportioner */
+}
+
+.treasure-closed {
+    position: absolute; /* Säkerställ att den kan placeras exakt */
+    bottom: -5%;        /* Placera den 10% från botten av fönstret */
+    left: 42%;          /* Placera den i mitten av fönstret horisontellt */
+    transform: translateX(-50%); /* Justera så att mitten av bilden är i mitten av fönstret */
+    width: 250px;       /* Ange den exakta bredden */
+    z-index: 2;         /* Se till att den syns över andra element */
+    transform: scaleX(-1); /* Spegelvänd bilden horisontellt */
+}
+
+.treasure-closed img {
+    width: 120%;         /* Justera storleken relativt till förälderns bredd */
+    height: auto;       /* Bevara bildens proportioner */
+}
+
+.forward-button {
+    width: 20%;         /* Justera storleken relativt till förälderns bredd */
+    cursor: pointer;
+    z-index: 3;
+}
+
+.forward-map-button {
+    position: absolute;
+    top: 40%;
+    left: 102%;
+    width: 25%;
+    cursor: pointer;
+}
+@media (max-width: 1100px) {
+    .forward-map-button {
+        top: -5%;
+        left: 40%;
+        width: 25%;
+    }
 }
 
 @view-transition {
