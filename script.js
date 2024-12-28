@@ -55,6 +55,16 @@ function hide() {
   }
 }
 
+// Funktion för att visa konfetti
+function visaKonfetti() {
+  // Starta konfetti med canvas-confetti
+  confetti({
+    particleCount: 100, // Antal konfettibitar
+    spread: 70,         // Spridning i grader
+    origin: { x: 0.5, y: 0.5 }, // Ursprung i mitten av skärmen
+  });
+}
+
 // Konvertera ordet till siffror
 function ordTillSiffror(ord) {
   const alfabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZÅÄÖ";
@@ -94,6 +104,7 @@ function kontrolleraBokstav(bokstav) {
 
      // Kontrollera om ordet är klart
      if (nuvarandeIndex === siffror.length) {
+      visaKonfetti(); // Visa konfetti
      }
   } else {
      document.querySelector("[data-letter='" + bokstav + "']").classList.add("incorrect");
