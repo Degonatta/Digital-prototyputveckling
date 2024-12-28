@@ -90,14 +90,20 @@ function kontrolleraBokstav(bokstav) {
      rutor[nuvarandeIndex].textContent = bokstav; // Ändra siffran till bokstav
      rutor[nuvarandeIndex].classList.add("correct");
      nuvarandeIndex++; // Gå vidare till nästa siffra
-     
+     document.querySelector("[data-letter='" + bokstav + "']").classList.add("correct");
 
      // Kontrollera om ordet är klart
      if (nuvarandeIndex === siffror.length) {
      }
   } else {
-     alert("Fel bokstav, försök igen!");
+     document.querySelector("[data-letter='" + bokstav + "']").classList.add("incorrect");
   }
+
+    timeout = setTimeout(() =>{
+      document.querySelector("[data-letter='" + bokstav + "']").classList.remove("correct");
+      document.querySelector("[data-letter='" + bokstav + "']").classList.remove("incorrect");
+    } , 1000);
+
 }
 
 // Lägg till event-lyssnare på alfabet-knapparna

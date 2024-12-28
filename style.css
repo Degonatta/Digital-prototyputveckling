@@ -151,9 +151,20 @@ main {
 
 .alphabet-buttons .number {
     font-size: 12px; /* Gör siffran mindre */
-    color: #666; /* Grå färg för siffran */
+    color: #443939; /* Grå färg för siffran */
     margin-top: -5px; /* Justera avstånd mellan bokstav och siffra */
 }
+
+.correct {
+    background-color: #28a745 !important; /* Grön bakgrund för rätt svar */
+    color: #fff; /* Vit text */
+}
+
+.incorrect {
+    background-color: #dc3545 !important; /* Röd bakgrund för fel svar */
+    color: #fff; /* Vit text */
+}
+
 
 .game {
     display: flex;                /* Aktiverar flexbox */
