@@ -582,7 +582,7 @@ h2 {
     border: none; /* Ta bort knappens standardborder */
     padding: 0; /* Ta bort onödigt mellanrum */
     cursor: pointer; /* För att indikera att det är klickbart */
-    z-index: 2; /* Se till att stenen ligger överst */
+    z-index: 3; /* Se till att stenen ligger överst */
     right: 20%;
     top: 50px;
 }
@@ -675,7 +675,7 @@ h2 {
 
 .willow-mushroom-two {
     position: absolute; /* Säkerställ att den kan placeras exakt */
-    bottom: 20%;        /* Placera den 10% från botten av fönstret */
+    bottom: 10%;        /* Placera den 10% från botten av fönstret */
     left: 40%;          /* Placera den i mitten av fönstret horisontellt */
     transform: translateX(-50%); /* Justera så att mitten av bilden är i mitten av fönstret */
     width: 250px;       /* Ange den exakta bredden */
@@ -756,7 +756,7 @@ h2 {
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: 1; /* Lägre än stenen */
+    z-index: 2; /* Lägre än stenen */
     margin-top: 22%;
     margin-left: -7%;
 }
@@ -844,6 +844,19 @@ h2 {
 .treasure-closed img {
     width: 120%;         /* Justera storleken relativt till förälderns bredd */
     height: auto;       /* Bevara bildens proportioner */
+}
+
+.small-treasure {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-top: 32%;
+    margin-left: 7%;
+}
+
+.small-treasure img {
+    width: 55%;
+    height: auto;
 }
 
 .forward-button {
