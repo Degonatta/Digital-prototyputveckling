@@ -92,10 +92,10 @@ body, html {
 }
 
 .the-end-page {
-    background-image: url(/Picture/TheEnd.png);
+    background-image: url(Picture/TheEnd.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;  
+    background-position: center;
 }
 
 header {
