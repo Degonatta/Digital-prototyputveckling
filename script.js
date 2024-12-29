@@ -55,6 +55,15 @@ function hide() {
   }
 }
 
+function spelaBokstavsljud(Sound) {
+  // Skapa sökväg till ljudfilen
+  const ljudFil = `sounds/${Sound.toUpperCase()}.mp3`;
+
+  // Skapa ett nytt Audio-objekt och spela upp ljudet
+  const ljud = new Audio(ljudFil);
+  ljud.play();
+}
+
 // Funktion för att visa konfetti
 function visaKonfetti() {
   // Starta konfetti med canvas-confetti
@@ -66,7 +75,7 @@ function visaKonfetti() {
 }
 
 // Hämta nuvarande antal lösta ord från sessionStorage
-let ordRäknare = parseInt(sessionStorage.getItem("ordRäknare")) || 0; // Standard är 0 om inget finns
+let ordRaknare = parseInt(sessionStorage.getItem("ordRaknare")) || 0; // Standard är 0 om inget finns
 const maxOrd = 5;   // Totalt antal ord
 
 // Konvertera ordet till siffror
@@ -98,6 +107,9 @@ function kontrolleraBokstav(bokstav) {
    console.log('korrekt', korrektSiffra)
 
   if (klickadSiffra === korrektSiffra) {
+    // Spela upp bokstavsljud
+    spelaBokstavsljud(bokstav);
+
      // Om det är rätt, byt siffran till bokstaven
      const numberDisplay = document.getElementById("number-display");
      const rutor = numberDisplay.querySelectorAll(".number-box"); // Använd rätt klass
@@ -109,15 +121,19 @@ function kontrolleraBokstav(bokstav) {
      // Kontrollera om ordet är klart
      if (nuvarandeIndex === siffror.length) {
       console.log("Ordet är klart!");
-      ordRäknare++; // Öka antalet lösta ord
+      ordRaknare++; // Öka antalet lösta ord
       visaKonfetti(); // Visa konfetti
+      setTimeout(() => {
+        spelaBokstavsljud(rollVald);
+      }, 500); // Vänta 3 sekunder innan omdirigering
+      
 
-      sessionStorage.setItem("ordRäknare", ordRäknare); // Uppdatera sessionStorage
+      sessionStorage.setItem("ordRaknare", ordRaknare); // Uppdatera sessionStorage
 
-  console.log(`Antal lösta ord: ${ordRäknare}`);
+  console.log(`Antal lösta ord: ${ordRaknare}`);
 
         // Kontrollera om det sista ordet är löst
-  if (ordRäknare === maxOrd) {
+  if (ordRaknare === maxOrd) {
     setTimeout(() => {
       console.log("Sista ordet är löst!");
       window.location.href = "laststep.html"; // Skicka till grattis-sidan
@@ -138,7 +154,7 @@ function kontrolleraBokstav(bokstav) {
 
 function startaOmSpelet() {
   console.log("startaOmSpelet() körs!");
-  sessionStorage.removeItem("ordRäknare");
+  sessionStorage.removeItem("ordRaknare");
   window.location.href = "start.html";
 }
 
