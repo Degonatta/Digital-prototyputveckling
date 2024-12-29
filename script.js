@@ -65,6 +65,10 @@ function visaKonfetti() {
   });
 }
 
+// Hämta nuvarande antal lösta ord från sessionStorage
+let ordRäknare = parseInt(sessionStorage.getItem("ordRäknare")) || 0; // Standard är 0 om inget finns
+const maxOrd = 5;   // Totalt antal ord
+
 // Konvertera ordet till siffror
 function ordTillSiffror(ord) {
   const alfabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZÅÄÖ";
@@ -104,8 +108,23 @@ function kontrolleraBokstav(bokstav) {
 
      // Kontrollera om ordet är klart
      if (nuvarandeIndex === siffror.length) {
+      console.log("Ordet är klart!");
+      ordRäknare++; // Öka antalet lösta ord
       visaKonfetti(); // Visa konfetti
-     }
+
+      sessionStorage.setItem("ordRäknare", ordRäknare); // Uppdatera sessionStorage
+
+  console.log(`Antal lösta ord: ${ordRäknare}`);
+
+        // Kontrollera om det sista ordet är löst
+  if (ordRäknare === maxOrd) {
+    setTimeout(() => {
+      console.log("Sista ordet är löst!");
+      window.location.href = "laststep.html"; // Skicka till grattis-sidan
+    }, 3000); // Vänta 3 sekunder innan omdirigering
+  }
+}
+     
   } else {
      document.querySelector("[data-letter='" + bokstav + "']").classList.add("incorrect");
   }
@@ -115,6 +134,12 @@ function kontrolleraBokstav(bokstav) {
       document.querySelector("[data-letter='" + bokstav + "']").classList.remove("incorrect");
     } , 1000);
 
+}
+
+function startaOmSpelet() {
+  console.log("startaOmSpelet() körs!");
+  sessionStorage.removeItem("ordRäknare");
+  window.location.href = "start.html";
 }
 
 // Lägg till event-lyssnare på alfabet-knapparna
