@@ -74,9 +74,24 @@ function visaKonfetti() {
   });
 }
 
-// Hämta nuvarande antal lösta ord från sessionStorage
-let ordRaknare = parseInt(sessionStorage.getItem("ordRaknare")) || 0; // Standard är 0 om inget finns
-const maxOrd = 5;   // Totalt antal ord
+// Kontrollera om vi är på sista sidan
+const isSistaSidan = window.location.pathname.includes("/kodfive.html");
+
+// Kontrollera om ordet är färdigt
+function kontrolleraOrdSlut() {
+  if (nuvarandeIndex === siffror.length) {
+    // Spelaren har klarat ordet
+    visaKonfetti(); // Visa konfetti
+
+    if (isSistaSidan) {
+      console.log("Skicka vidare till sista sidan");
+      // Om vi är på sista sidan, skicka vidare till grattis-sidan
+      setTimeout(() => {
+        window.location.href = "laststep.html"; // Skicka spelaren vidare
+      }, 3000); // Vänta 3 sekunder innan omdirigering
+    }
+  }
+}
 
 // Konvertera ordet till siffror
 function ordTillSiffror(ord) {
@@ -118,27 +133,15 @@ function kontrolleraBokstav(bokstav) {
      nuvarandeIndex++; // Gå vidare till nästa siffra
      document.querySelector("[data-letter='" + bokstav + "']").classList.add("correct");
 
+     kontrolleraOrdSlut();
+
      // Kontrollera om ordet är klart
      if (nuvarandeIndex === siffror.length) {
       console.log("Ordet är klart!");
-      ordRaknare++; // Öka antalet lösta ord
       visaKonfetti(); // Visa konfetti
       setTimeout(() => {
         spelaBokstavsljud(ord);
       }, 700); // Vänta 0.7 sekunder innan ordet sägs
-      
-
-      sessionStorage.setItem("ordRaknare", ordRaknare); // Uppdatera sessionStorage
-
-  console.log(`Antal lösta ord: ${ordRaknare}`);
-
-        // Kontrollera om det sista ordet är löst
-  if (ordRaknare === maxOrd) {
-    setTimeout(() => {
-      console.log("Sista ordet är löst!");
-      window.location.href = "laststep.html"; // Skicka till grattis-sidan
-    }, 3000); // Vänta 3 sekunder innan omdirigering
-  }
 }
      
   } else {
@@ -154,7 +157,6 @@ function kontrolleraBokstav(bokstav) {
 
 function startaOmSpelet() {
   console.log("startaOmSpelet() körs!");
-  sessionStorage.removeItem("ordRaknare");
   window.location.href = "start.html";
 }
 
