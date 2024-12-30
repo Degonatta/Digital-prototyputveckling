@@ -125,7 +125,7 @@ function kontrolleraBokstav(bokstav) {
       visaKonfetti(); // Visa konfetti
       setTimeout(() => {
         spelaBokstavsljud(ord);
-      }, 500); // Vänta 3 sekunder innan omdirigering
+      }, 700); // Vänta 0.7 sekunder innan ordet sägs
       
 
       sessionStorage.setItem("ordRaknare", ordRaknare); // Uppdatera sessionStorage
