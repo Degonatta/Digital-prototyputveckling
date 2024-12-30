@@ -124,7 +124,7 @@ function kontrolleraBokstav(bokstav) {
       ordRaknare++; // Öka antalet lösta ord
       visaKonfetti(); // Visa konfetti
       setTimeout(() => {
-        spelaBokstavsljud(rollVald);
+        spelaBokstavsljud(ord);
       }, 500); // Vänta 3 sekunder innan omdirigering
       
 
