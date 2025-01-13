@@ -17,6 +17,6 @@ Spelets mål är att skapa en lärorik och engagerande upplevelse som bygger på
 - **Ljudfiler**: Lagrade i mappen `Sounds`, används för ljudeffekter och bakgrundsmusik.
 - **`script.js`**: Innehåller JavaScript-kod för spelets funktionalitet.
 - **`style.css`**: Innehåller CSS för spelets design och layout.
-- **`words.json`**: En lista över ord som används i spelet.
+- **`words.json`**: En lista över ord som slumpas fram till den sista ledtråden.
 
   Av: Andy Lundberg & Natalie Andersson
