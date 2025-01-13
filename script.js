@@ -142,6 +142,22 @@ function kontrolleraBokstav(bokstav) {
       setTimeout(() => {
         spelaBokstavsljud(ord);
       }, 700); // Vänta 0.7 sekunder innan ordet sägs
+
+      const knappElement = document.querySelector('.hiddenbutton');
+      if (knappElement) {
+        knappElement.style.opacity = 0; // Starta med osynlig knapp
+        knappElement.style.display = "block"; // Visa knappen om den var dold
+    
+        let opacity = 0;
+        const fadeIn = setInterval(() => {
+          opacity += 0.1;
+          knappElement.style.opacity = opacity;
+          if (opacity >= 1) {
+            clearInterval(fadeIn); // Stoppa intervallet när opaciteten når 1
+          }
+        }, 50); // Öka opaciteten var 50 ms
+      }
+      
 }
      
   } else {

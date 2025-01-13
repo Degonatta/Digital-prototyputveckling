@@ -916,6 +916,10 @@ h2 {
     }
 }
 
+.hiddenbutton {
+    display: none;
+}
+
 @view-transition {
     navigation: auto;
 }
