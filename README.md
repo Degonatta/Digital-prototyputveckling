@@ -12,7 +12,7 @@ Spelets mål är att skapa en lärorik och engagerande upplevelse som bygger på
 
 ## Innehåll
 
-- **HTML-filer**: Representerar olika nivåer och steg i spelet.
+- **HTML-filer**: Representerar olika steg i spelet.
 - **Bilder**: Lagrade i mappen `Picture`, används för visuella element i spelet.
 - **Ljudfiler**: Lagrade i mappen `Sounds`, används för ljudeffekter.
 - **`script.js`**: Innehåller JavaScript-kod för spelets funktionalitet.
