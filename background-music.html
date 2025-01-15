@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background Music</title>
+</head>
+<body>
+  <audio id="background-audio" src="backgroundmusic.mp3" autoplay loop>
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    const audio = document.getElementById('background-audio');
+    audio.volume = 0.01; // Justera volymen till en svag nivå
+  </script>
+</body>
+</html>

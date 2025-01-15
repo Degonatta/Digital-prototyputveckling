@@ -239,17 +239,17 @@ async function fetchRandomWord() {
    });
  });
 
+  // Kontrollera om ljud redan spelas
+  const audio = document.getElementById('background-audio');
+  audio.volume = 0.1; // Justera volym till en svag nivå
 
-//Array som parar bokstav mot siffra
+  // Kontrollera om det redan finns en aktiv instans
+  if (!window.localStorage.getItem('musicPlaying')) {
+    audio.play();
+    window.localStorage.setItem('musicPlaying', true);
+  }
 
-
-//API som slumpar fram ett ord för barn i åldrar 3-7. 4-6 bokstäver.API
-
-//Function som omvandlar ordet till siffror och lägger dom i enskilda rutor. 
-
-//Function som ger knapparna ett id med bokstav och siffra 
-
-//Function som jämför siffrorna från det omvandlade ordet med id på knappen.
-  // If match - rutan ändras från siffra till korrekt bokstav
-
-//Function som gör att om man trycker på rätt bokstav så blinkar det till i grönt och trycker man fel så blinkar det rött.
+  // Håll kvar musiken även om sidan laddas om
+  audio.addEventListener('pause', () => {
+    audio.play();
+  });
