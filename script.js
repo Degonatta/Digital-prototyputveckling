@@ -1,3 +1,12 @@
+if (!window.backgroundMusic) {
+   const audio = new Audio('backgroundmusic.mp3'); // Din musikfil
+   audio.loop = true; // Musik ska loopa
+   audio.volume = 0.01; // Justera volymen till en svag nivå
+   audio.play(); // Börja spela musiken
+   window.backgroundMusic = audio; // Spara musiken som en global variabel
+}
+
+
 // Dictionary för att hålla koll på de olika orden baserat på roll
 const ordDict = {
    "roll-1": "STEN",
@@ -239,17 +248,4 @@ async function fetchRandomWord() {
    });
  });
 
-  // Kontrollera om ljud redan spelas
-  const audio = document.getElementById('background-audio');
-  audio.volume = 0.1; // Justera volym till en svag nivå
-
-  // Kontrollera om det redan finns en aktiv instans
-  if (!window.localStorage.getItem('musicPlaying')) {
-    audio.play();
-    window.localStorage.setItem('musicPlaying', true);
-  }
-
-  // Håll kvar musiken även om sidan laddas om
-  audio.addEventListener('pause', () => {
-    audio.play();
-  });
+  
