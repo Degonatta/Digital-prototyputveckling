@@ -1,11 +1,30 @@
-if (!window.backgroundMusic) {
-   const audio = new Audio('backgroundmusic.mp3'); // Din musikfil
-   audio.loop = true; // Musik ska loopa
-   audio.volume = 0.01; // Justera volymen till en svag nivå
-   audio.play(); // Börja spela musiken
-   window.backgroundMusic = audio; // Spara musiken som en global variabel
+// Kontrollera om ljudspelaren redan existerar
+let ljud;
+
+if (!window.localStorage.getItem("isMusicPlaying")) {
+  // Skapa ett nytt Audio-objekt om musiken inte redan spelas
+  ljud = new Audio("backgroundmusic.mp3");
+  ljud.loop = true; // Gör att låten spelar i loop
+  ljud.volume = 0.1; // Sätt standardvolym
+  ljud.play();
+  
+  // Spara information om musiken i localStorage
+  window.localStorage.setItem("isMusicPlaying", "true");
+  window.localStorage.setItem("musicTime", "0");
+} else {
+  // Återanvänd existerande musikinformation från localStorage
+  ljud = new Audio("backgroundmusic.mp3");
+  const startTid = parseFloat(window.localStorage.getItem("musicTime")) || 0;
+  ljud.currentTime = startTid; // Starta från senaste position
+  ljud.loop = true;
+  ljud.volume = 0.1;
+  ljud.play();
 }
 
+// Uppdatera speltid regelbundet
+setInterval(() => {
+  window.localStorage.setItem("musicTime", ljud.currentTime);
+}, 1000);
 
 // Dictionary för att hålla koll på de olika orden baserat på roll
 const ordDict = {
