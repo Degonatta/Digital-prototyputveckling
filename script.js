@@ -17,7 +17,7 @@ if (!window.localStorage.getItem("isMusicPlaying")) {
   const startTid = parseFloat(window.localStorage.getItem("musicTime")) || 0;
   ljud.currentTime = startTid; // Starta från rätt tid
   ljud.loop = true;
-  ljud.volume = 0.02;
+  ljud.volume = 0.01;
   ljud.play();
 }
 
