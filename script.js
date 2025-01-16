@@ -2,22 +2,22 @@
 let ljud;
 
 if (!window.localStorage.getItem("isMusicPlaying")) {
-  // Skapa ett nytt Audio-objekt om musiken inte redan spelas
+  // Skapa nytt Audio-objekt om musiken inte redan spelas
   ljud = new Audio("backgroundmusic.mp3");
-  ljud.loop = true; // Gör att låten spelar i loop
-  ljud.volume = 0.1; // Sätt standardvolym
+  ljud.loop = true;
+  ljud.volume = 0.02;
   ljud.play();
-  
-  // Spara information om musiken i localStorage
+
+  // Spara information i localStorage
   window.localStorage.setItem("isMusicPlaying", "true");
   window.localStorage.setItem("musicTime", "0");
 } else {
-  // Återanvänd existerande musikinformation från localStorage
+  // Återanvänd musiken
   ljud = new Audio("backgroundmusic.mp3");
   const startTid = parseFloat(window.localStorage.getItem("musicTime")) || 0;
-  ljud.currentTime = startTid; // Starta från senaste position
+  ljud.currentTime = startTid; // Starta från rätt tid
   ljud.loop = true;
-  ljud.volume = 0.1;
+  ljud.volume = 0.02;
   ljud.play();
 }
 

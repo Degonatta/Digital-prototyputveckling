@@ -466,6 +466,13 @@ h2 {
     z-index: 3;         /* Se till att den syns över andra element */
 }
 
+.play-button {
+    z-index: 2;         /* Se till att den syns över andra element */
+    margin-top: 3%;
+    width: 30%;
+    cursor: pointer;          /* Ändra muspekaren vid hovring */
+}
+
 .helpwillow-button{
     background-color: #ffffff; /* Grön bakgrund */
     color: rgb(0, 0, 0);             /* Vit text */
