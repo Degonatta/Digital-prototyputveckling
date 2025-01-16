@@ -24,7 +24,7 @@ if (!window.localStorage.getItem("isMusicPlaying")) {
 // Uppdatera speltid regelbundet
 setInterval(() => {
   window.localStorage.setItem("musicTime", ljud.currentTime);
-}, 1000);
+}, 5);
 
 // Dictionary för att hålla koll på de olika orden baserat på roll
 const ordDict = {
